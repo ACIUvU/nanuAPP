@@ -1,0 +1,2 @@
+rootProject.name='nanu'
+include ':app'
