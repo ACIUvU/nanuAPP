@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff">
+
+        <TextView
+            android:id="@+id/design_tab_menu_search"
+            android:text="探索"
+            android:textSize="18sp"
+            android:layout_height="36dp"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/text_yellow"
+            android:layout_width="match_parent" />
+
+        <!-- 图片 -->
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/image"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="8dp" />
+
+        <View
+            android:layout_width="90dp"
+            android:layout_height="88dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/resource_corner" />
+
+        <!-- 标题 -->
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/image"
+            android:layout_toRightOf="@+id/image"
+            android:layout_marginTop="8dp"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <!-- 类型 -->
+        <TextView
+            android:id="@+id/type"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/name"
+            android:drawableLeft="@drawable/ic_grade_black_24dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/image"
+            android:textColor="@color/type"
+            android:textSize="14dip" />
+
+        <!-- 介绍 -->
+        <TextView
+            android:id="@+id/introduction"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/type"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="-21dp"
+            android:layout_toRightOf="@+id/type"
+            android:textColor="@color/type"
+            android:textSize="@dimen/introduction" />
+
+        <!-- 点赞数 -->
+        <!--<TextView-->
+            <!--android:id="@+id/commendation"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="60dp"-->
+            <!--android:layout_toRightOf="@id/name"-->
+            <!--android:drawableLeft="@drawable/ic_favorite_black_24dp"-->
+            <!--android:textColor="@color/commendation"-->
+            <!--android:textSize="@dimen/commendation" />-->
+    </RelativeLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="140dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="vertical">
+        <GridView
+            android:id="@+id/showGridView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:numColumns="2"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:horizontalSpacing="10dp"
+            android:verticalSpacing="15dp">
+        </GridView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
