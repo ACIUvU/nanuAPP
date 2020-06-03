@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bg_gray"
-    tools:context=".view.MainActivity">
+    tools:context=".MainActivity">
     <RelativeLayout
         android:id="@+id/ly_top_bar"
         android:layout_width="match_parent"
@@ -38,30 +38,31 @@
             android:id="@+id/rb_home"
             style="@style/tab_menu_item"
             android:drawableTop="@drawable/tab_menu_home"
-            android:text="@string/tab_menu_home"/>
+            android:text="圈子"/>
         <RadioButton
             android:id="@+id/rb_design"
             style="@style/tab_menu_item"
             android:drawableTop="@drawable/tab_menu_design"
-            android:text="@string/tab_menu_design"/>
+            android:text="探索"/>
         <RadioButton
             android:id="@+id/rb_mine"
             style="@style/tab_menu_item"
             android:drawableTop="@drawable/tab_menu_mine"
-            android:text="@string/tab_menu_mine"/>
+            android:text="我的"/>
 
     </RadioGroup>
     <View
         android:id="@+id/div_tab_bar"
         android:layout_width="match_parent"
-        android:layout_height="2px"
+        android:layout_height="2dp"
         android:layout_above="@id/rg_tab_bar"
         android:background="@color/div_white"/>
+
     <FrameLayout
         android:id="@+id/ly_content"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@id/div_tab_bar"
-        android:layout_below="@id/ly_top_bar"></FrameLayout>
+        android:layout_below="@id/ly_top_bar" />
 
 </RelativeLayout>

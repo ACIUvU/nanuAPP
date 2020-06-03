@@ -11,7 +11,6 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.nanu.R;
 import com.example.nanu.Database_helper.DatabaseHelper;
 import com.example.nanu.model.SQLiteDB;
 import com.example.nanu.model.UserLogin;
@@ -41,6 +40,7 @@ public class UserRegisterActivity extends AppCompatActivity {
                     userLogin.setNumber(number);
                     userLogin.setPassword(password);
 
+                    //待注册信息输入数据库进行核验
                     int resUserRegister = SQLiteDB.getInstance(getApplicationContext()).saveUserLogin(userLogin);
                     if( resUserRegister== 1){
                         // 注册成功
@@ -62,7 +62,7 @@ public class UserRegisterActivity extends AppCompatActivity {
         EditText number = findViewById(R.id.numberUserRegister);
         EditText password = findViewById(R.id.passwordUserRegister);
         if(TextUtils.isEmpty(number.getText()) || TextUtils.isEmpty(password.getText())){
-            Toast.makeText(UserRegisterActivity.this,"请完整填写",Toast.LENGTH_LONG).show();
+            Toast.makeText(UserRegisterActivity.this,"请完整填写注册信息",Toast.LENGTH_LONG).show();
             return true;
         }
         return false;

@@ -25,50 +25,36 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements HomeFragment.OnFragmentInteractionListener,
         DesignFragment.OnFragmentInteractionListener, com.example.nanu.MineFragment.OnFragmentInteractionListener,RecommodFragment.OnFragmentInteractionListener,AttentionFragment.OnFragmentInteractionListener{
-    private TextView mTextMessage;
-    private DatabaseHelper db;
+    //private TextView mTextMessage;
+    //private DatabaseHelper db;
     private RadioGroup rg_tab_bar;
-    private RadioButton rb_home;
+    private RadioButton rb_design;
     private HomeFragment homeFragment;
     private DesignFragment designFragment;
     private MineFragment mineFragment;
     private FragmentManager fManager;
 
-    // 在该方法传入一标志位标识是否要退出App & 关闭自身
-    //@Override
-    //protected void onNewIntent(Intent intent) {
-    //    super.onNewIntent(intent);
-    //    if (intent != null) {
-    // 是否退出App的标识
-    //        boolean isExitApp = intent.getBooleanExtra("exit", false);
-    //        if (isExitApp) {
-    // 关闭自身
-    //            this.finish();
-    //        }
-    //    }
-    //}
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-//        this.deleteDatabase("curiosity_db");
-
-        // 首先显示登录界面
+        // 显示登录界面
         setContentView(R.layout.user_login);
 
-        Button loginUserLogin = (Button)findViewById(R.id.loginUserLogin);
-        Button registerUserLogin = (Button)findViewById(R.id.registerUserLogin);
-        final EditText numberUserLogin = (EditText)findViewById(R.id.numberUserLogin);
-        final EditText passwordUserLogin = (EditText)findViewById(R.id.passwordUserLogin);
+        Button loginUserLogin = findViewById(R.id.loginUserLogin);
+        Button registerUserLogin = findViewById(R.id.registerUserLogin);
+        final EditText numberUserLogin = findViewById(R.id.numberUserLogin);
+        final EditText passwordUserLogin = findViewById(R.id.passwordUserLogin);
 
-        // 登录按钮
+        // 登录监听
         loginUserLogin.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                if(isEmpty()==true){System.out.println("信息填写不完整");}
+                if(isEmpty()==true){System.out.println("请先填写登录信息");}
                 else{
-                    System.out.println("信息填写完整");
+                    System.out.println("信息填写完成");
 
                     String number = numberUserLogin.getText().toString().trim();
                     String password = passwordUserLogin.getText().toString().trim();
@@ -78,21 +64,23 @@ public class MainActivity extends AppCompatActivity implements HomeFragment.OnFr
                     userLogin.setNumber(number);
                     userLogin.setPassword(password);
 
+                    //数据库核查登录信息
                     int resUserLogin = SQLiteDB.getInstance(getApplicationContext()).queryUserLogin(number,password);
                     if(resUserLogin == 1){
-                        // 登录成功跳转到主页面
+                        // 登录成功后跳转到主页面
                         Toast.makeText(MainActivity.this,"登录成功",Toast.LENGTH_LONG).show();
                         setContentView(R.layout.activity_main);
 
                         // 这里写Fragment
                         fManager=getSupportFragmentManager();
                         rg_tab_bar = (RadioGroup)findViewById(R.id.rg_tab_bar);
+
                         //底部按钮监听
                         rg_tab_bar.setOnCheckedChangeListener(new TabOnCheckedChangeListener());
 
-                        rb_home = (RadioButton) findViewById(R.id.rb_home);
-                        //默认选择主页
-                        rb_home.setChecked(true);
+                        //默认主页
+                        rb_design = (RadioButton) findViewById(R.id.rb_design);
+                        rb_design.setChecked(true);
 
                     }else if(resUserLogin == 0){
                         // 用户名不存在
@@ -109,7 +97,7 @@ public class MainActivity extends AppCompatActivity implements HomeFragment.OnFr
         registerUserLogin.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                // 跳转注册界面
+                // 跳转至注册界面
                 Intent intent = new Intent(MainActivity.this,UserRegisterActivity.class);
                 startActivity(intent);
             }
@@ -143,7 +131,6 @@ public class MainActivity extends AppCompatActivity implements HomeFragment.OnFr
 
     @Override
     public void onCheckedChanged(RadioGroup radioGroup, int i) {
-
     }
 
     //底部按钮监听的内部类

@@ -14,6 +14,8 @@ public class UserLogin implements Serializable {
     public String password;
 
     public UserLogin(){ }
+
+    /*
     public UserLogin(int id,String number,String password ){
         super();
         this.number = number;
@@ -26,6 +28,8 @@ public class UserLogin implements Serializable {
             + COLUMN_NUMBER + "TEXT, "
             + COLUMN_PASSWORD + "TEXT, "
             + ")";
+
+     */
 
     // 获取登录信息
     public long getId(){ return id; }

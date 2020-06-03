@@ -30,10 +30,10 @@ import com.example.nanu.model.ImageItem;
 public class ImageGridActivity extends AppCompatActivity {
     public static final String EXTRA_IMAGE_LIST = "imagelist";
 
-    // ArrayList<Entity> dataList;//鐢ㄦ潵瑁呰浇鏁版嵁婧愮殑鍒楄〃
+    // ArrayList<Entity> dataList;//
     List<ImageItem> dataList;
     GridView gridView;
-    ImageGridAdapter adapter;// 鑷畾涔夌殑閫傞厤鍣�
+    ImageGridAdapter adapter;//
     AlbumHelper helper;
     Button bt;
     int LENGTH_LONG = 400;

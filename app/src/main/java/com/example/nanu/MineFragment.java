@@ -17,14 +17,8 @@ import androidx.fragment.app.Fragment;
 import com.example.nanu.R;
 
 
-/**
- * A simple {@link Fragment} subclass.
- * Activities that contain this fragment must implement the
- * {@link MineFragment.OnFragmentInteractionListener} interface
- * to handle interaction events.
- * Use the {@link MineFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+//”我的“一栏
+
 public class MineFragment extends Fragment {
 
     //private FragmentManager fManager;
