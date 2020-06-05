@@ -46,20 +46,7 @@ public class MineArticle extends AppCompatActivity {
                 intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
                 intent.setClass(MineArticle.this, UserRegisterActivity.class);
                 startActivity(intent);
-                //@TargetApi(Build.VERSION_CODES.LOLLIPOP)
 
-                // 1. 通过Context获取ActivityManager
-                 //       ActivityManager activityManager = (ActivityManager) context.getApplicationContext().getSystemService(Context.ACTIVITY_SERVICE);
-
-                // 2. 通过ActivityManager获取任务栈
-                //List<ActivityManager.AppTask> appTaskList = activityManager.getAppTasks();
-
-                // 3. 逐个关闭Activity
-                //for (ActivityManager.AppTask appTask : appTaskList) {
-                //    appTask.finishAndRemoveTask();
-                //}
-                // 4. 结束进程
-                // System.exit(0);
             }
         });
 

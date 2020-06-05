@@ -7,7 +7,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="45dp"
+        android:layout_height="75dp"
         android:gravity="center_vertical">
 
         <TextView
@@ -17,7 +17,7 @@
             android:layout_marginLeft="10dp"
             android:gravity="center_vertical"
             android:text="历史记录"
-            android:textColor="@color/gray"/>
+            android:textColor="@color/gray" />
 
 
         <ImageView
@@ -28,7 +28,7 @@
             android:layout_centerVertical="true"
             android:layout_marginRight="10dp"
             android:padding="12dp"
-            android:src="@mipmap/delete"/>
+            android:src="@mipmap/delete" />
 
     </RelativeLayout>
 

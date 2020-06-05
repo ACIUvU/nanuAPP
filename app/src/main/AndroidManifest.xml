@@ -50,7 +50,7 @@
         <activity android:name=".PhotoActivity" />
         <activity android:name=".PublishActivity" />
         <activity android:name=".AttentionContentActivity" />
-        <activity android:name=".HomeSearchActivity" />
+        <activity android:name=".ListSearchActivity" />
         <activity android:name=".RecommodContentActivity"
             tools:ignore="DuplicateActivity" />
 

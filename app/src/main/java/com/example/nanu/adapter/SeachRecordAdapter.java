@@ -8,10 +8,6 @@ import com.example.nanu.R;
 
 import java.util.List;
 
-/**
- * Created by yi.huangxing on 17/12/13.类描述:
- */
-
 public class SeachRecordAdapter extends BaseRecycleAdapter<String> {
     public SeachRecordAdapter(List<String> datas, Context mContext) {
         super(datas, mContext);
@@ -22,8 +18,7 @@ public class SeachRecordAdapter extends BaseRecycleAdapter<String> {
 
         TextView textView= (TextView) holder.getView(R.id.tv_record);
         textView.setText(datas.get(position));
-        
-        //
+
         holder.getView(R.id.tv_delete).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

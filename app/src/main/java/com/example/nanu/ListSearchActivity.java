@@ -11,24 +11,13 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.nanu.R;
 import com.example.nanu.adapter.BaseRecycleAdapter;
 import com.example.nanu.adapter.SeachRecordAdapter;
 import com.example.nanu.model.SQLiteDB;
 
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
-import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
-import android.widget.Toast;
-
-public class HomeSearchActivity extends AppCompatActivity {
+//首页的搜索模块
+public class ListSearchActivity extends AppCompatActivity {
     private Button mbtn_serarch;
     private EditText met_search;
     private RecyclerView mRecyclerView;
@@ -41,7 +30,7 @@ public class HomeSearchActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home_search);
+        setContentView(R.layout.activity_list_search);
         initViews();
     }
 
@@ -79,14 +68,13 @@ public class HomeSearchActivity extends AppCompatActivity {
                     if (!hasData){
                         db.insertData(met_search.getText().toString().trim());
                     }else {
-                        Toast.makeText(HomeSearchActivity.this, "该内容已在历史记录中", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ListSearchActivity.this, "该内容已在历史记录中", Toast.LENGTH_SHORT).show();
                     }
 
-                    //
                     mAdapter.updata(db.queryData(""));
 
                 }else {
-                    Toast.makeText(HomeSearchActivity.this, "请输入内容", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ListSearchActivity.this, "请输入内容", Toast.LENGTH_SHORT).show();
                 }
 
             }

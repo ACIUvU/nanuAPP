@@ -6,15 +6,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.curiositydaily.view.HomeSearchActivity">
+    tools:context="com.example.nanu.ListSearchActivity">
 
 
     <RelativeLayout
-        android:textColor="@color/colorPrimary"
-        android:textSize="14sp"
-        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
-        android:layout_height="45dp">
+        android:layout_height="45dp"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp">
 
 
         <Button
@@ -22,14 +22,16 @@
             android:layout_width="80dp"
             android:layout_height="match_parent"
             android:layout_alignParentRight="true"
-            android:hint="搜索"/>
+            android:hint="搜索" />
 
         <EditText
             android:id="@+id/et_search"
-            android:hint="输入内容"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_toLeftOf="@id/btn_serarch"/>
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:layout_toLeftOf="@id/btn_serarch"
+            android:hint="输入内容" />
 
     </RelativeLayout>
 

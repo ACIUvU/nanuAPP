@@ -16,64 +16,29 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.RadioGroup;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.example.nanu.R;
-import com.example.nanu.model.SQLiteDB;
 
 import java.util.ArrayList;
 import java.util.List;
 
 
-/**
- * A simple {@link Fragment} subclass.
- * Activities that contain this fragment must implement the
- * {@link HomeFragment.OnFragmentInteractionListener} interface
- * to handle interaction events.
- * Use the {@link HomeFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
-public class HomeFragment extends Fragment implements View.OnClickListener, ViewPager.OnPageChangeListener {
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
+public class ListFragment extends Fragment implements View.OnClickListener, ViewPager.OnPageChangeListener {
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
     private ViewPager viewPager;
     private TextView textView1,textView2;
     private List<Fragment> fragmentList;
     private VpAdapter mAdapter;
-    private SQLiteDB db;
 
-    // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
-//    private String content
 
     private OnFragmentInteractionListener mListener;
 
-    public HomeFragment() {
-//        this.content = con;
-        // Required empty public constructor
+    public ListFragment() {
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment HomeFragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static HomeFragment newInstance(String param1, String param2) {
-        HomeFragment fragment = new HomeFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -87,16 +52,15 @@ public class HomeFragment extends Fragment implements View.OnClickListener, View
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         View view =  inflater.inflate(R.layout.fragment_home, container, false);
-//        TextView txt_home = (TextView)view.findViewById(R.id.txt_home);
-//        txt_home.setText("首页");
+        //搜索按钮
         ImageButton home_search_imagebtn = (ImageButton) view.findViewById(R.id.home_search_imagebtn);
+        //发布按钮
         ImageButton home_publish_imagebtn = (ImageButton) view.findViewById(R.id.home_publish_imagebtn);
         home_search_imagebtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(),HomeSearchActivity.class);
+                Intent intent = new Intent(getActivity(), ListSearchActivity.class);
                 startActivity(intent);
             }
         });
@@ -107,6 +71,8 @@ public class HomeFragment extends Fragment implements View.OnClickListener, View
                 startActivity(intent);
             }
         });
+
+        //初始化页面视图
         initView(view);
 
         return view;
@@ -127,7 +93,6 @@ public class HomeFragment extends Fragment implements View.OnClickListener, View
         textView1.setTextColor(Color.parseColor("#FFC800"));
     }
 
-    // TODO: Rename method, update argument and hook method into UI event
     public void onButtonPressed(Uri uri) {
         if (mListener != null) {
             mListener.onFragmentInteraction(uri);
@@ -182,8 +147,6 @@ public class HomeFragment extends Fragment implements View.OnClickListener, View
             case 1:
                 textView2.setTextColor(Color.parseColor("#FFC800"));
                 break;
-
-
         }
 
     }
@@ -193,18 +156,8 @@ public class HomeFragment extends Fragment implements View.OnClickListener, View
 
     }
 
-    /**
-     * This interface must be implemented by activities that contain this
-     * fragment to allow an interaction in this fragment to be communicated
-     * to the activity and potentially other fragments contained in that
-     * activity.
-     * <p>
-     * See the Android Training lesson <a href=
-     * "http://developer.android.com/training/basics/fragments/communicating.html"
-     * >Communicating with Other Fragments</a> for more information.
-     */
+
     public interface OnFragmentInteractionListener {
-        // TODO: Update argument type and name
         void onFragmentInteraction(Uri uri);
 
         void onCheckedChanged(RadioGroup radioGroup, int i);

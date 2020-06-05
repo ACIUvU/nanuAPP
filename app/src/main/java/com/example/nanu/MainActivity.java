@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 
-import com.example.nanu.Database_helper.DatabaseHelper;
 import com.example.nanu.model.UserLogin;
 import com.example.nanu.model.SQLiteDB;
 
@@ -20,16 +19,14 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
-import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity implements HomeFragment.OnFragmentInteractionListener,
+public class MainActivity extends AppCompatActivity implements ListFragment.OnFragmentInteractionListener,
         DesignFragment.OnFragmentInteractionListener, com.example.nanu.MineFragment.OnFragmentInteractionListener,RecommodFragment.OnFragmentInteractionListener,AttentionFragment.OnFragmentInteractionListener{
-    //private TextView mTextMessage;
-    //private DatabaseHelper db;
+
     private RadioGroup rg_tab_bar;
     private RadioButton rb_design;
-    private HomeFragment homeFragment;
+    private ListFragment listFragment;
     private DesignFragment designFragment;
     private MineFragment mineFragment;
     private FragmentManager fManager;
@@ -144,11 +141,11 @@ public class MainActivity extends AppCompatActivity implements HomeFragment.OnFr
             switch (checkedId) {
                 case R.id.rb_home:
 
-                    if (homeFragment == null) {
-                        homeFragment = new HomeFragment();
-                        fTransaction.add(R.id.ly_content, homeFragment);
+                    if (listFragment == null) {
+                        listFragment = new ListFragment();
+                        fTransaction.add(R.id.ly_content, listFragment);
                     } else {
-                        fTransaction.show(homeFragment);
+                        fTransaction.show(listFragment);
                     }
                     break;
                 case R.id.rb_design:
@@ -175,7 +172,7 @@ public class MainActivity extends AppCompatActivity implements HomeFragment.OnFr
         }
     }
     private void hideAllFragment(FragmentTransaction fragmentTransaction){
-        if(homeFragment!=null)fragmentTransaction.hide(homeFragment);
+        if(listFragment!=null)fragmentTransaction.hide(listFragment);
         if(designFragment!=null)fragmentTransaction.hide(designFragment);
         if(mineFragment!=null)fragmentTransaction.hide(mineFragment);
     }
