@@ -1,4 +1,4 @@
-package com.example.nanu;
+package com.example.nanu.model;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -11,9 +11,10 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.nanu.R;
 import com.example.nanu.adapter.BaseRecycleAdapter;
 import com.example.nanu.adapter.SeachRecordAdapter;
-import com.example.nanu.model.SQLiteDB;
+import com.example.nanu.data_structure.SQLiteDB;
 
 
 //首页的搜索模块

@@ -17,10 +17,10 @@ import com.example.nanu.R;
 import com.example.nanu.RecommodContentActivity;
 import com.example.nanu.model.RecommodData;
 
-public class MyAdapter extends BaseAdapter {
+public class ListAdapter extends BaseAdapter {
     private List<RecommodData> mData;
     private Context mContext;
-    public MyAdapter(List<RecommodData> mData,Context mContext){
+    public ListAdapter(List<RecommodData> mData, Context mContext){
         this.mData = mData;
         this.mContext = mContext;
     }

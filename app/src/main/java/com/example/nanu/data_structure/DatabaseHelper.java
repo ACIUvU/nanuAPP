@@ -1,4 +1,4 @@
-package com.example.nanu.Database_helper;
+package com.example.nanu.data_structure;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;

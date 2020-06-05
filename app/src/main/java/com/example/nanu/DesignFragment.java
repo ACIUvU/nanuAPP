@@ -3,35 +3,25 @@ package com.example.nanu;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.os.Bundle;
 
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
-import android.os.TestLooperManager;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.Window;
-import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.VolleyLog;
 import com.android.volley.toolbox.JsonArrayRequest;
-import com.example.nanu.R;
 import com.example.nanu.adapter.CustomListAdapter;
 import com.example.nanu.app.AppController;
-import com.example.nanu.model.DesignContent;
-import com.example.nanu.model.SQLiteDB;
+import com.example.nanu.data_structure.SQLiteDB;
 import com.example.nanu.model.UserDesign;
 
 import org.json.JSONArray;

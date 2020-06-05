@@ -19,6 +19,8 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 
 
+import com.example.nanu.model.ListSearchActivity;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -84,9 +86,11 @@ public class ListFragment extends Fragment implements View.OnClickListener, View
         viewPager.addOnPageChangeListener(this);
         textView1.setOnClickListener(this);
         textView2.setOnClickListener(this);
+
         fragmentList = new ArrayList<>();
         fragmentList.add(new RecommodFragment());
         fragmentList.add(new AttentionFragment());
+
         mAdapter = new VpAdapter(getChildFragmentManager());
         viewPager.setAdapter(mAdapter);
         resetTextViewColor();

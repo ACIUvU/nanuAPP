@@ -1,18 +1,20 @@
-package com.example.nanu.model;
+package com.example.nanu.data_structure;
 
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.util.Log;
 
-import com.example.nanu.Database_helper.DatabaseHelper;
+import com.example.nanu.model.DesignContent;
+import com.example.nanu.model.UserAttention;
+import com.example.nanu.model.UserDesign;
+import com.example.nanu.model.UserLogin;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-import static com.example.nanu.model.UserArticle.TITLE;
-import static com.example.nanu.model.UserInfo.ID;
+import static com.example.nanu.data_structure.UserArticle.TITLE;
 
 public class SQLiteDB {
     public static final String DB_NAME = "curiosity_db";

@@ -6,7 +6,7 @@ import android.net.Uri;
 import android.os.Bundle;
 
 import com.example.nanu.model.UserLogin;
-import com.example.nanu.model.SQLiteDB;
+import com.example.nanu.data_structure.SQLiteDB;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;

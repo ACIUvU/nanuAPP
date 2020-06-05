@@ -8,13 +8,9 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.provider.MediaStore;
-import android.view.ContextMenu;
-import android.view.MenuItem;
 import android.view.View;
-import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.GridView;
-import android.widget.ImageView;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -23,11 +19,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.NetworkImageView;
-import com.example.nanu.R;
 import com.example.nanu.app.AppController;
-import com.example.nanu.model.BitmapCache;
-import com.example.nanu.model.DesignContent;
-import com.example.nanu.model.SQLiteDB;
+import com.example.nanu.data_structure.SQLiteDB;
 import com.example.nanu.model.UserDesign;
 
 import java.io.File;
@@ -38,7 +31,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.UUID;
 
 public class DesignContentActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
     private GridView gridView;

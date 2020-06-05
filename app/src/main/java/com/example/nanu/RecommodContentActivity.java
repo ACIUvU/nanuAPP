@@ -9,8 +9,7 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.nanu.R;
-import com.example.nanu.model.SQLiteDB;
+import com.example.nanu.data_structure.SQLiteDB;
 import com.sackcentury.shinebuttonlib.ShineButton;
 
 public class RecommodContentActivity extends AppCompatActivity {

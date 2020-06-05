@@ -1,4 +1,4 @@
-package com.example.nanu.model;
+package com.example.nanu.data_structure;
 
 public class UserArticle {
     public static final String TABLE_NAME = "user_article";     // 数据表名

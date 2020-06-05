@@ -3,7 +3,6 @@ package com.example.nanu;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -11,8 +10,8 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.nanu.Database_helper.DatabaseHelper;
-import com.example.nanu.model.SQLiteDB;
+import com.example.nanu.data_structure.DatabaseHelper;
+import com.example.nanu.data_structure.SQLiteDB;
 import com.example.nanu.model.UserLogin;
 
 public class UserRegisterActivity extends AppCompatActivity {
