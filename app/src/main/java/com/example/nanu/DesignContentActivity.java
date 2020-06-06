@@ -35,9 +35,9 @@ import java.util.Map;
 public class DesignContentActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
     private GridView gridView;
     private List<Map<String, Object>> dataList;
-    private int[] designImage1 = { R.drawable.dianzi1, R.drawable.dianzi2,
+    private int[] designImage = { R.drawable.dianzi1, R.drawable.dianzi2,
             R.drawable.dianzi3};
-    private String[] designText1 = {"华为p30新品发售","ipad——下一代生产力","TCL电视行业领军者"};
+    private String[] designText = {"华为p30新品发售","ipad——下一代生产力","TCL电视行业领军者"};
 
     private int[] designHeadImage = {R.drawable.design_content_7,R.drawable.design_content_8,
             R.drawable.design_content_9,R.drawable.design_content_10,R.drawable.design_content_11,
@@ -101,13 +101,13 @@ public class DesignContentActivity extends AppCompatActivity implements AdapterV
 
     public void getData() {
         int length=0;
-        if(typeFlag==1){length = designImage1.length;}
+        if(typeFlag==1){length = designImage.length;}
         else{length = designHeadImage.length;}
         for (int i = 0; i < length; i ++) {
             if(typeFlag==1){
                 Map<String, Object> map = new HashMap<String, Object>();
-                map.put("image" ,designImage1[i]);
-                map.put("text", designText1[i]);
+                map.put("image" ,designImage[i]);
+                map.put("text", designText[i]);
                 dataList.add(map);
             }
             else{
@@ -152,7 +152,7 @@ public class DesignContentActivity extends AppCompatActivity implements AdapterV
         try {
             MediaStore.Images.Media.insertImage(context.getContentResolver(),
                     file.getAbsolutePath(), fileName, null);
-            Toast.makeText(context,"保存图片成功",Toast.LENGTH_SHORT).show();
+            Toast.makeText(context,"加入小组成功",Toast.LENGTH_SHORT).show();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
