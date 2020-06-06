@@ -70,8 +70,8 @@ public class CustomListAdapter extends BaseAdapter {
         name.setText(m.getName());
 
         // 获取类型
-        if(m.getType()==0){ type.setText("头像");}
-        else{type.setText("壁纸");}
+        if(m.getType()==0){ type.setText("已加入小组");}
+        else{type.setText("未加入小组");}
 
         // 获取介绍
         introduction.setText(m.getIntroduction());

@@ -5,8 +5,6 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.util.Log;
 
-import com.example.nanu.model.DesignContent;
-import com.example.nanu.model.UserAttention;
 import com.example.nanu.model.UserLogin;
 
 import java.util.ArrayList;

@@ -42,7 +42,7 @@ android:orientation="vertical">
     android:layout_below="@id/name_people"
     android:layout_marginTop="25dp"
     android:layout_toRightOf="@+id/image_people"
-    android:textColor="@color/type"
+    android:textColor="@color/att_intrp"
     android:textSize="@dimen/introduction" />
 
 

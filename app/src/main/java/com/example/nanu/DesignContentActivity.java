@@ -35,10 +35,9 @@ import java.util.Map;
 public class DesignContentActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
     private GridView gridView;
     private List<Map<String, Object>> dataList;
-    private int[] designImage = { R.drawable.design_content_1, R.drawable.design_content_2,
-            R.drawable.design_content_3,R.drawable.design_content_4,
-            R.drawable.design_content_5,R.drawable.design_content_6};
-    private String[] designText = {"春困的好奇怪","你在看什么","国际宠物日","孤独猫咪","白色情人节","为友谊干杯"};
+    private int[] designImage1 = { R.drawable.dianzi1, R.drawable.dianzi2,
+            R.drawable.dianzi3};
+    private String[] designText1 = {"华为p30新品发售","ipad——下一代生产力","TCL电视行业领军者"};
 
     private int[] designHeadImage = {R.drawable.design_content_7,R.drawable.design_content_8,
             R.drawable.design_content_9,R.drawable.design_content_10,R.drawable.design_content_11,
@@ -74,11 +73,12 @@ public class DesignContentActivity extends AppCompatActivity implements AdapterV
 //            System.out.println(ud.toString());
             name.setText(ud.getName());
             image.setImageUrl(ud.getImage(),imageLoader);
-            if(ud.getType()==0){ type.setText("头像"); typeFlag=0;}
-            else{type.setText("壁纸"); typeFlag=1;}
+            if(ud.getType()==0){ type.setText("已加入小组"); typeFlag=0;}
+            else{type.setText("未加入小组"); typeFlag=1;}
             introduction.setText(ud.getIntroduction());
 //            commendation.setText(String.valueOf(ud.getCommendation()));
         }
+
 
         // 显示壁纸or头像\
         gridView = (GridView) findViewById(R.id.showGridView);
@@ -93,17 +93,21 @@ public class DesignContentActivity extends AppCompatActivity implements AdapterV
         }
         gridView.setAdapter(simpleAdapter);
         gridView.setOnItemClickListener(this);
+
+
     }
+
+
 
     public void getData() {
         int length=0;
-        if(typeFlag==1){length = designImage.length;}
+        if(typeFlag==1){length = designImage1.length;}
         else{length = designHeadImage.length;}
         for (int i = 0; i < length; i ++) {
             if(typeFlag==1){
                 Map<String, Object> map = new HashMap<String, Object>();
-                map.put("image" ,designImage[i]);
-                map.put("text", designText[i]);
+                map.put("image" ,designImage1[i]);
+                map.put("text", designText1[i]);
                 dataList.add(map);
             }
             else{
