@@ -6,18 +6,18 @@
         "introduction": "索尼大法新品发布会！"
 },
     {
-        "name": "we are 伐木累~",
-        "image": "https://www.sony.com.cn/content/dam/sonyportal/aboutsony/images/financial.jpg",
-        "type": 1,
-        "commendation": 132,
-        "introduction": "优秀奶爸聚集地~"
-    },
-    {
         "name": "摄影爱好者upup",
         "image": "https://www.sony.com.cn/content/dam/sonyportal/aboutsony/images/professional.jpg",
-        "type": 2,
+        "type": 1,
         "commendation": 100,
         "introduction": "佳能？尼康？还是大法？"
+    },
+    {
+        "name": "we are 伐木累~",
+        "image": "https://www.sony.com.cn/content/dam/sonyportal/aboutsony/images/financial.jpg",
+        "type": 2,
+        "commendation": 132,
+        "introduction": "优秀奶爸聚集地~"
     },
     {
         "name": "灵感 到处都是~",

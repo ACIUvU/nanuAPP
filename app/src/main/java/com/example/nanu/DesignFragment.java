@@ -270,22 +270,23 @@ public class DesignFragment extends Fragment{
         if(SQLiteDB.getInstance(getActivity().getApplicationContext()).saveUserDesign(userDesign1)) System.out.println("插入设计专题成功!");
         else System.out.println("插入设计专题失败!");
 
-        userDesign1.setName("we are 伐木累~");
+        userDesign1.setName("摄影爱好者upup");
+        userDesign1.setImage("R.drawable.dianzi1");
         userDesign1.setType(1);
+        userDesign1.setIntroduction("佳能？尼康？还是大法？");
+        userDesign1.setCommendation(100);
+        userDesign1.setImage("https://www.sony.com.cn/content/dam/sonyportal/aboutsony/images/professional.jpg");
+        if(SQLiteDB.getInstance(getActivity().getApplicationContext()).saveUserDesign(userDesign1)) System.out.println("插入设计专题成功!");
+        else System.out.println("插入设计专题失败!");
+
+        userDesign1.setName("we are 伐木累~");
+        userDesign1.setType(2);
         userDesign1.setIntroduction("优秀奶爸聚集地~");
         userDesign1.setCommendation(50);
         userDesign1.setImage("https://www.sony.com.cn/content/dam/sonyportal/aboutsony/images/financial.jpg");
         if(SQLiteDB.getInstance(getActivity().getApplicationContext()).saveUserDesign(userDesign1)) System.out.println("插入设计专题成功!");
         else System.out.println("插入设计专题失败!");
 
-        userDesign1.setName("摄影爱好者upup");
-        userDesign1.setImage("R.drawable.dianzi1");
-        userDesign1.setType(2);
-        userDesign1.setIntroduction("佳能？尼康？还是大法？");
-        userDesign1.setCommendation(100);
-        userDesign1.setImage("https://www.sony.com.cn/content/dam/sonyportal/aboutsony/images/professional.jpg");
-        if(SQLiteDB.getInstance(getActivity().getApplicationContext()).saveUserDesign(userDesign1)) System.out.println("插入设计专题成功!");
-        else System.out.println("插入设计专题失败!");
 
         userDesign1.setName("灵感 到处都是~");
         userDesign1.setImage("https://www.sony.com.cn/content/dam/sonyportal/aboutsony/images/design.jpg");
