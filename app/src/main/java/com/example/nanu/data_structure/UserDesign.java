@@ -1,4 +1,4 @@
-package com.example.nanu.model;
+package com.example.nanu.data_structure;
 
 public class UserDesign {
     public static final String TABLE_NAME = "user_design";      // 数据表名
@@ -23,8 +23,8 @@ public class UserDesign {
                     + NAME + "TEXT,"
                     + IMAGE + "TEXT,"
                     + TYPE + "INTEGER,"
-                    + INTRODUCTION + "TEXT"
-                    + COMMENDATION + "INTEGER,"
+                    + INTRODUCTION + "TEXT,"
+                    + COMMENDATION + "INTEGER"
                     + ")";
 
     public UserDesign(){}

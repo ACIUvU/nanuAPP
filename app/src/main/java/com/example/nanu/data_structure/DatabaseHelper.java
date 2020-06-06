@@ -17,7 +17,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     // 建立专题内容表
     public static final String CREATE_DESIGN_CONTENT = "create table design_content(id integer primary key autoincrement,design_id integer,image_url text)";
     // 建立发布文章表
-    public static final String CREATE_USER_ARTICLE = "create table user_article(id integer primary key autoincrement,user_id integer,title text,content text,commendation integer)";
+    public static final String CREATE_USER_ARTICLE = "create table user_article(id integer primary key autoincrement,user_id integer,title text,content text,commendation integer,image integer)";
     // 建立关注表
     public static final String CREATE_USER_ATTENTION = "create table user_attention(id integer primary key autoincrement,user_id integer)";
     //创建搜索历史表

@@ -22,7 +22,7 @@ import com.android.volley.toolbox.JsonArrayRequest;
 import com.example.nanu.adapter.CustomListAdapter;
 import com.example.nanu.app.AppController;
 import com.example.nanu.data_structure.SQLiteDB;
-import com.example.nanu.model.UserDesign;
+import com.example.nanu.data_structure.UserDesign;
 
 import org.json.JSONArray;
 

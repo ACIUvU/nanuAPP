@@ -7,7 +7,6 @@ import android.util.Log;
 
 import com.example.nanu.model.DesignContent;
 import com.example.nanu.model.UserAttention;
-import com.example.nanu.model.UserDesign;
 import com.example.nanu.model.UserLogin;
 
 import java.util.ArrayList;
@@ -15,6 +14,7 @@ import java.util.HashMap;
 import java.util.List;
 
 import static com.example.nanu.data_structure.UserArticle.TITLE;
+
 
 public class SQLiteDB {
     public static final String DB_NAME = "curiosity_db";
@@ -221,6 +221,7 @@ public class SQLiteDB {
                 userArticle.setTitle(cursor.getString(cursor.getColumnIndex("title")));
                 userArticle.setContent(cursor.getString(cursor.getColumnIndex("content")));
                 userArticle.setCommendation(cursor.getInt(cursor.getColumnIndex("commendation")));
+                userArticle.setImage(cursor.getInt(cursor.getColumnIndex("image")));
                 list.add(userArticle);
             }while(cursor.moveToNext());
         }
@@ -229,9 +230,10 @@ public class SQLiteDB {
     // 插入文章信息
     public boolean saveUserArticle(UserArticle userArticle){
         try {
-            db.execSQL("insert into user_article(id,user_id,title,content,commendation) values(?,?,?,?,?)",
+            db.execSQL("insert into user_article(id,user_id,title,content,commendation,image) values(?,?,?,?,?,?)",
+            //db.execSQL("insert into user_article(id,user_id,title,content) values(?,?,?,?,?,?)",
                     new String[]{String.valueOf(userArticle.getId()),String.valueOf(userArticle.getUserId()),userArticle.getTitle().toString(),
-                            userArticle.getContent(),String.valueOf(userArticle.getCommendation())});
+                            userArticle.getContent(),String.valueOf(userArticle.getCommendation()),String.valueOf(userArticle.getImage())});
             return true;
         }catch (Exception e){
             Log.d("插入文章信息错误",e.getMessage().toString());
@@ -251,6 +253,7 @@ public class SQLiteDB {
                 userArticle.setTitle(cursor.getString(cursor.getColumnIndex("title")));
                 userArticle.setContent(cursor.getString(cursor.getColumnIndex("content")));
                 userArticle.setCommendation(cursor.getInt(cursor.getColumnIndex("commendation")));
+                userArticle.setImage(cursor.getInt(cursor.getColumnIndex("image")));
             } while (cursor.moveToNext());
             return userArticle;
         }
@@ -268,6 +271,7 @@ public class SQLiteDB {
                 userArticle.setContent(cursor.getString(cursor.getColumnIndex("content")));
                 userArticle.setCommendation(cursor.getInt(cursor.getColumnIndex("commendation")));
                 userArticle.setUserId(cursor.getInt(cursor.getColumnIndex("user_id")));
+                userArticle.setImage(cursor.getInt(cursor.getColumnIndex("image")));
             } while (cursor.moveToNext());
             return userArticle;
         }

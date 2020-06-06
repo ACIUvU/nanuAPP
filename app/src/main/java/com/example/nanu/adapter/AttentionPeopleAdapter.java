@@ -6,7 +6,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -18,9 +17,6 @@ import java.util.List;
 import com.example.nanu.R;
 import com.example.nanu.model.PeopleData;
 import com.example.nanu.AttentionContentActivity;
-import com.example.nanu.RecommodContentActivity;
-import com.example.nanu.model.PeopleData;
-import com.example.nanu.model.RecommodData;
 
 public class AttentionPeopleAdapter extends BaseAdapter {
     private List<PeopleData> mData;

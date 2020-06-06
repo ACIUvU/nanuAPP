@@ -14,10 +14,12 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.example.nanu.adapter.ListAdapter;
-import com.example.nanu.model.RecommodData;
+import com.example.nanu.data_structure.RecommodData;
 import com.example.nanu.data_structure.SQLiteDB;
 import com.example.nanu.data_structure.UserArticle;
 import com.example.nanu.data_structure.UserInfo;
+
+import com.example.nanu.R;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -85,7 +87,7 @@ public class RecommodFragment extends Fragment {
         for(UserArticle i:list){
             System.out.println(i.toString());
             System.out.println(SQLiteDB.getInstance(getActivity().getApplicationContext()).queryUserInfo(i.getUserId()).toString());
-            RecommodData data = new RecommodData(i.getTitle(),SQLiteDB.getInstance(getActivity().getApplicationContext()).queryUserInfo(i.getUserId()).getName(),i.getContent(),R.mipmap.ic_launcher);
+            RecommodData data = new RecommodData(i.getTitle(),SQLiteDB.getInstance(getActivity().getApplicationContext()).queryUserInfo(i.getUserId()).getName(),i.getContent(),i.getImage());
             datas.add(data);
         }
 
@@ -151,8 +153,9 @@ public class RecommodFragment extends Fragment {
         userArticle1.setTitle("六月份即将举办的智源大会");
         userArticle1.setContent("本场大会届时将有 6 位图灵奖得主、百余位著名学者受邀出席，同开发者探讨未来十年人工智能将如何影响整个社会，以及寻找下一步的发展方向...");
         userArticle1.setCommendation(100);
-        if(SQLiteDB.getInstance(Objects.requireNonNull(getActivity()).getApplicationContext()).saveUserArticle(userArticle1)) System.out.println("插入设计专题成功!");
-        else System.out.println("插入设计专题失败!");
+        userArticle1.setImage(R.mipmap.ic_launcher);
+        if(SQLiteDB.getInstance((getActivity()).getApplicationContext()).saveUserArticle(userArticle1)) System.out.println("插入设计专题成功!");
+        else System.out.println("插文章失败!");
 
         UserArticle userArticle2 = new UserArticle();
         userArticle2.setId(2);
@@ -160,6 +163,7 @@ public class RecommodFragment extends Fragment {
         userArticle2.setTitle("一款颇为实用的开源工具：Penrose");
         userArticle2.setContent("你只需输入数学公式，便可快速生成极具美感的数学图表...");
         userArticle2.setCommendation(16);
+        userArticle2.setImage(R.drawable.design_content_3);
         if(SQLiteDB.getInstance(getActivity().getApplicationContext()).saveUserArticle(userArticle2)) System.out.println("插入文章成功!");
         else System.out.println("插入文章失败!");
 
@@ -169,6 +173,7 @@ public class RecommodFragment extends Fragment {
         userArticle3.setTitle("童话“小红帽”的变迁");
         userArticle3.setContent("从社会生产方失变迁解读不同时代的童话故事...");
         userArticle3.setCommendation(20);
+        userArticle3.setImage(R.drawable.design_content_3);
         if(SQLiteDB.getInstance(getActivity().getApplicationContext()).saveUserArticle(userArticle3)) System.out.println("插入文章成功!");
         else System.out.println("插入文章失败!");
 
@@ -178,6 +183,7 @@ public class RecommodFragment extends Fragment {
         userArticle4.setTitle("美国人民只提种族矛盾？");
         userArticle4.setContent("美国种族冲突层出不穷，背后其实是阶级问题。不解决阶级矛盾，就没法真正解决种族矛盾...");
         userArticle4.setCommendation(100);
+        userArticle4.setImage(R.drawable.design_content_12);
         if(SQLiteDB.getInstance(Objects.requireNonNull(getActivity()).getApplicationContext()).saveUserArticle(userArticle4)) System.out.println("插入设计专题成功!");
         else System.out.println("插入设计专题失败!");
 
@@ -215,7 +221,7 @@ public class RecommodFragment extends Fragment {
         userInfo1.setId(1);
         userInfo1.setName("@GitHubDaily");
         userInfo1.setIntroduction("每日分享GitHub优质项目");
-        userInfo1.setImage("https://api.androidhive.info/json/movies/2.jpg");
+        userInfo1.setImage("drawable/design_content_11.jpg");
         //System.out.println("-------------1-----------"+userInfo1.toString());
         if(SQLiteDB.getInstance(Objects.requireNonNull(getActivity()).getApplicationContext()).saveUserInfo(userInfo1)) System.out.println("插入用户信息成功!");
         else System.out.println("插入用户信息失败!");
@@ -223,7 +229,7 @@ public class RecommodFragment extends Fragment {
         userInfo1.setId(2);
         userInfo1.setName("@开源工坊");
         userInfo1.setIntroduction("知名互联网分享博主");
-        userInfo1.setImage("https://api.androidhive.info/json/movies/2.jpg");
+        userInfo1.setImage("design_content_11.jpg");
         if(SQLiteDB.getInstance(getActivity().getApplicationContext()).saveUserInfo(userInfo1)) System.out.println("插入用户信息成功!");
         else System.out.println("插入用户信息失败!");
 

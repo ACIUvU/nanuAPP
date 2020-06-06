@@ -1,4 +1,4 @@
-package com.example.nanu.model;
+package com.example.nanu.data_structure;
 
 import android.media.Image;
 

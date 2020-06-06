@@ -12,7 +12,7 @@ import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.NetworkImageView;
 import com.example.nanu.R;
 import com.example.nanu.app.AppController;
-import com.example.nanu.model.UserDesign;
+import com.example.nanu.data_structure.UserDesign;
 
 import java.util.List;
 
