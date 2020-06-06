@@ -35,16 +35,14 @@ import java.util.Map;
 public class DesignContentActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
     private GridView gridView;
     private List<Map<String, Object>> dataList;
-    private int[] designImage1 = { R.drawable.dianzi1, R.drawable.dianzi2,
-            R.drawable.dianzi3};
-    private String[] designText1 = {"华为p30新品发售","ipad——下一代生产力","TCL电视行业领军者"};
+    private int[] designImage1 = { R.drawable.jiating1, R.drawable.jiating2,
+            R.drawable.jiating3,R.drawable.jiating4, R.drawable.jiating5};
+    private String[] designText1 = {"人物特写 ","古风模特 ","微距景色 ","小白微单 ","旅拍计划 "};
 
-    private int[] designHeadImage = {R.drawable.design_content_7,R.drawable.design_content_8,
-            R.drawable.design_content_9,R.drawable.design_content_10,R.drawable.design_content_11,
-            R.drawable.design_content_12,R.drawable.design_content_13,R.drawable.design_content_14,
-            R.drawable.design_content_15,R.drawable.design_content_16};
-    private String[] designHeadText = {"猫的区别对待","我恨","跟着太阳上班","伴着月亮入眠","甜品王国太诱惑",
-            "落入幸福陷阱","报告！","有喵星人在卖萌","蹭蹭锦鲤好运气","年后事事都如意"};
+    private int[] designHeadImage = { R.drawable.dianzi1, R.drawable.dianzi2,
+            R.drawable.dianzi3,R.drawable.dianzi4,
+            R.drawable.dianzi5,R.drawable.dianzi6};
+    private String[] designHeadText ={"8K 从容阅不凡","无线降噪运动耳机","随身音响","Sony降噪豆","SurfaceHeadPhones2","VR眼镜"};
     private SimpleAdapter simpleAdapter;
 
 
@@ -124,7 +122,7 @@ public class DesignContentActivity extends AppCompatActivity implements AdapterV
 //        Toast.makeText(this,"第"+position+"个",Toast.LENGTH_SHORT).show();
         Bitmap bitmap;
         if(typeFlag==1) {
-            bitmap = (Bitmap) BitmapFactory.decodeResource(getResources(),designImage[position]);
+            bitmap = (Bitmap) BitmapFactory.decodeResource(getResources(),designImage1[position]);
         } else{bitmap = BitmapFactory.decodeResource(getResources(),R.drawable.design_content_2);}
         saveImageToGallery(getApplicationContext(),bitmap);
     }
@@ -152,7 +150,7 @@ public class DesignContentActivity extends AppCompatActivity implements AdapterV
         try {
             MediaStore.Images.Media.insertImage(context.getContentResolver(),
                     file.getAbsolutePath(), fileName, null);
-            Toast.makeText(context,"保存图片成功",Toast.LENGTH_SHORT).show();
+            Toast.makeText(context,"成功加入小组",Toast.LENGTH_SHORT).show();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
