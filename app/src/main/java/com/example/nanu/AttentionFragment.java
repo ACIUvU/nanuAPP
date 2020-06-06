@@ -89,7 +89,7 @@ public class AttentionFragment extends Fragment {
         ListView list_attention = (ListView)getView().findViewById(R.id.list_attention);
         AttentionPeopleAdapter ma = new AttentionPeopleAdapter(datas, getActivity());
         list_attention.setAdapter(ma);
-        for (int i = 1; i <= 20; i++) {
+        for (int i = 1; i <= 5; i++) {
             PeopleData data = new PeopleData("第" + i+"个关注的人的名字", "第" + i+"个关注的人的简介",R.mipmap.ic_launcher);
             datas.add(data);
         }
