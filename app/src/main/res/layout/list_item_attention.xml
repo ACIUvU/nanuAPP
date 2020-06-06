@@ -14,7 +14,7 @@ android:orientation="vertical">
     android:layout_alignParentLeft="true"
     android:layout_marginTop="10dp"
     android:layout_marginRight="8dp"
-    android:icon="@drawable/ic_home_black_24dp"/>/>
+    android:icon="@drawable/ic_home_black_24dp"/>
 
 <View
     android:layout_width="110dp"
@@ -29,7 +29,7 @@ android:orientation="vertical">
     android:layout_alignTop="@+id/image_people"
     android:layout_toRightOf="@+id/image_people"
     android:layout_marginTop="5dp"
-    android:textSize="@dimen/name"
+    android:textSize="@dimen/type"
     android:textStyle="bold" />
 
 
@@ -43,7 +43,7 @@ android:orientation="vertical">
     android:layout_marginTop="25dp"
     android:layout_toRightOf="@+id/image_people"
     android:textColor="@color/type"
-    android:textSize="@dimen/type" />
+    android:textSize="@dimen/introduction" />
 
 
 

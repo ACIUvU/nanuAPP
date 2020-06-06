@@ -89,10 +89,17 @@ public class AttentionFragment extends Fragment {
         ListView list_attention = (ListView)getView().findViewById(R.id.list_attention);
         AttentionPeopleAdapter ma = new AttentionPeopleAdapter(datas, getActivity());
         list_attention.setAdapter(ma);
-        for (int i = 1; i <= 5; i++) {
-            PeopleData data = new PeopleData("第" + i+"个关注的人的名字", "第" + i+"个关注的人的简介",R.mipmap.ic_launcher);
-            datas.add(data);
-        }
+        PeopleData data = new PeopleData("GitHubDaily", "每日分享GitHub优质项目",R.drawable.github);
+        datas.add(data);
+        data = new PeopleData("开源工坊", "知名互联网分享博主",R.drawable.qt);
+        datas.add(data);
+        data = new PeopleData("暗戳戳的偷偷吃瓜群众", "我只是个简简单单的吃瓜群众~",R.drawable.mayun);
+        datas.add(data);
+        data = new PeopleData("Google中国", "Google中国官方帐号",R.drawable.google);
+        datas.add(data);
+        data = new PeopleData("观视频工作室", "理性观世界",R.drawable.guan);
+        datas.add(data);
+
         list_attention.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
