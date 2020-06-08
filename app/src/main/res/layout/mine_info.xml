@@ -27,8 +27,8 @@
         android:layout_width="90dp"
         android:layout_height="90dp"
         android:scaleType="fitXY"
-        android:src="@drawable/mine_head"
-        tools:src="@drawable/mine_head" />
+        android:src="@drawable/touxiang"
+        tools:src="@drawable/touxiang" />
 
 
 

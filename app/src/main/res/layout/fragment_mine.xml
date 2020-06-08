@@ -18,17 +18,17 @@
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:scaleType="fitXY"
-            app:srcCompat="@drawable/mine_background"
-            tools:srcCompat="@drawable/mine_background" />
+            app:srcCompat="@drawable/background"
+            tools:srcCompat="@drawable/background" />
 
         <ImageButton
             android:id="@+id/ib_head"
             android:layout_width="90dp"
             android:layout_height="90dp"
             android:layout_centerInParent="true"
-            android:scaleType="fitXY"
-            android:src="@drawable/mine_head"
-            tools:src="@drawable/mine_head" />
+            android:scaleType="centerCrop"
+            android:src="@drawable/touxiang"
+            tools:src="@drawable/touxiang" />
 
         <RelativeLayout
             android:layout_width="match_parent"

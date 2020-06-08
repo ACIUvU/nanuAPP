@@ -1,13 +1,7 @@
 <resources>
     <string name="app_name">Nanu</string>
-    <string name="title_home">推荐/关注帖子</string>
-    <string name="title_design">设计壁纸、头像、动图</string>
-    <string name="title_person">个人主页</string>
-    <string name="tab_menu_design">设计</string>
-    <string name="tab_menu_mine">我的</string>
-    <string name="tab_menu_home">首页</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <string name="action_settings">Settings</string>
@@ -16,14 +10,14 @@
     <string name="tab_mine_commendation">     我的发现</string>
     <string name="tab_mine_attention">     我的关注</string>
     <string name="tab_mine_feedback">     意见反馈</string>
-    <string name="tab_mine_protocol">     用户协议</string>
-    <string name="user_name">honey</string>
-    <string name="user_phone">happy!</string>
+    <string name="tab_mine_protocol">     NanuAPP简介</string>
+    <string name="user_name">用户ID</string>
+    <string name="user_phone">个性签名~</string>
     <string name="fragment_other">.      用户须知：
-        nanuAPP主要有用户对文章的操作、对个人信息的操作以及对设计版块的操作。
+        nanuAPP主要有用户对文章的操作、对个人信息的操作以及对探索的操作。
         其中对文章的操作包含发布文章、点赞评论文章、关注其他用户等；
-        对个人信息的操作包含修改和查看，以及系统消息；
-        设计版块则包括对头像、壁纸的浏览和保存。</string>
+        对个人信息的操作包含修改和查看。
+    </string>
     <string name="fragment_return">返回</string>
     <string name="mine_change">确认更改</string>
     <string name="mine_info_name">昵称</string>
