@@ -100,7 +100,6 @@ public  abstract  class BaseRecycleAdapter  <T> extends RecyclerView.Adapter<Bas
 
     /**
      * 添加底部视图
-     * @param footer
      */
     public void setFooterView(View footer){
         this.mFooterView = footer;
@@ -129,7 +128,6 @@ public  abstract  class BaseRecycleAdapter  <T> extends RecyclerView.Adapter<Bas
 
     /**
      * 刷新数据
-     * @param datas
      */
     public void refresh(List<T> datas){
         this.datas.clear();
@@ -139,7 +137,6 @@ public  abstract  class BaseRecycleAdapter  <T> extends RecyclerView.Adapter<Bas
 
     /**
      *      刷新数据
-     * @param data
      */
     public   void updata(List<T> data){
         this.datas=data;
@@ -148,7 +145,6 @@ public  abstract  class BaseRecycleAdapter  <T> extends RecyclerView.Adapter<Bas
 
     /**
      * 添加数据
-     * @param datas
      */
     public void addData(List<T> datas){
         this.datas.addAll(datas);
@@ -156,8 +152,6 @@ public  abstract  class BaseRecycleAdapter  <T> extends RecyclerView.Adapter<Bas
     }
     /**
      * 移除数据
-     *
-     * @param position
      */
     public void remove(int position) {
         if (position >= 0 && position < datas.size()) {
@@ -169,8 +163,6 @@ public  abstract  class BaseRecycleAdapter  <T> extends RecyclerView.Adapter<Bas
 
     /**
      *  绑定数据
-     * @param holder  具体的viewHolder
-     * @param position  对应的索引
      */
     protected abstract void bindData(BaseViewHolder holder, int position);
 
@@ -202,8 +194,6 @@ public  abstract  class BaseRecycleAdapter  <T> extends RecyclerView.Adapter<Bas
 
         /**
          * 获取设置的view
-         * @param id
-         * @return
          */
         public View getView(int id) {
             View view = mViewMap.get(id);
@@ -217,7 +207,6 @@ public  abstract  class BaseRecycleAdapter  <T> extends RecyclerView.Adapter<Bas
 
     /**
      * 获取子item
-     * @return
      */
     public abstract int getLayoutId();
 
@@ -225,8 +214,6 @@ public  abstract  class BaseRecycleAdapter  <T> extends RecyclerView.Adapter<Bas
 
     /**
      * 设置文本属性
-     * @param view
-     * @param text
      */
     public void setItemText(View view,String text){
         if(view instanceof TextView){
@@ -255,7 +242,6 @@ public  abstract  class BaseRecycleAdapter  <T> extends RecyclerView.Adapter<Bas
 
     /**
      *   这个方法很重要的
-     * @param holder
      */
 //
 //    @Override

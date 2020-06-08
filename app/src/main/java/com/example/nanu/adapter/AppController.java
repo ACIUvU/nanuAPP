@@ -1,4 +1,4 @@
-package com.example.nanu.app;
+package com.example.nanu.adapter;
 
 import android.app.Application;
 import android.text.TextUtils;
@@ -7,7 +7,6 @@ import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.Volley;
-import com.example.nanu.utils.LruBitmapCache;
 
 
 public class AppController extends Application {

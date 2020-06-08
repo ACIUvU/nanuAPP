@@ -50,7 +50,6 @@ public class ImageBucketAdapter extends BaseAdapter {
 
 	@Override
 	public int getCount() {
-		// TODO Auto-generated method stub
 		int count = 0;
 		if (dataList != null) {
 			count = dataList.size();
@@ -60,13 +59,11 @@ public class ImageBucketAdapter extends BaseAdapter {
 
 	@Override
 	public Object getItem(int arg0) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public long getItemId(int arg0) {
-		// TODO Auto-generated method stub
 		return arg0;
 	}
 
@@ -79,7 +76,6 @@ public class ImageBucketAdapter extends BaseAdapter {
 
 	@Override
 	public View getView(int arg0, View arg1, ViewGroup arg2) {
-		// TODO Auto-generated method stub
 		Holder holder;
 		if (arg1 == null) {
 			holder = new Holder();

@@ -34,7 +34,6 @@ public class MineAttention extends AppCompatActivity {
     private ProgressDialog pDialog;
     private ListView lv;
 
-    //private static String url = "https://api.androidhive.info/contacts/";
 
     ArrayList<HashMap<String, String>> contactList;
 
@@ -52,10 +51,6 @@ public class MineAttention extends AppCompatActivity {
 
     private class GetContacts extends AsyncTask<Void, Void, Void> {
 
-        //@Override
-        //protected Void doInBackground(Void...voids) {
-        //    return null;
-        //}
 
         @Override
         protected void onPreExecute() {
@@ -180,10 +175,6 @@ public class MineAttention extends AppCompatActivity {
             }
         }
 
-    //@Override
-    //protected void onCreate(Bundle savedInstanceState) {
-        //super.onCreate(savedInstanceState);
-        //setContentView(R.layout.mine_attention);
 
 
     }

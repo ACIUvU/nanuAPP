@@ -1,4 +1,4 @@
-package com.example.nanu.utils;
+package com.example.nanu.adapter;
 
 import android.graphics.Bitmap;
 import android.util.LruCache;

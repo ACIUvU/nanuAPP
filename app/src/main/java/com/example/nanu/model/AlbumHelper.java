@@ -17,8 +17,6 @@ import java.util.Map.Entry;
 /**
  * 专辑帮助类
  * 
- * @author Administrator
- * 
  */
 public class AlbumHelper {
 	final String TAG = getClass().getSimpleName();
