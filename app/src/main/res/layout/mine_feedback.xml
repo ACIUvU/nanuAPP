@@ -6,14 +6,12 @@
 
 
     <ImageView
-        android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:scaleType="fitXY"
         app:srcCompat="@drawable/mine_background" />
 
     <EditText
-        android:id="@+id/et_mine_feedback"
         android:layout_width="match_parent"
         android:layout_height="300dp"
         android:ems="10"

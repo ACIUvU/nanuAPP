@@ -6,7 +6,6 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:scaleType="fitXY"
@@ -14,7 +13,6 @@
 
     <!--头像-->
     <TextView
-        android:id="@+id/tv_mine_info_head"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/tv_mine_info_head"
@@ -34,7 +32,6 @@
 
     <!--昵称-->
     <TextView
-        android:id="@+id/tv_mine_info_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/mine_info_name"
@@ -57,7 +54,6 @@
 
     <!--个签-->
     <TextView
-        android:id="@+id/tv_mine_info_sign"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/mine_info_sign"

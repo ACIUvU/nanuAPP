@@ -13,7 +13,6 @@
         android:background="#ffffff">
 
         <TextView
-            android:id="@+id/design_tab_menu_search"
             android:text="探索"
             android:textSize="18sp"
             android:layout_height="36dp"
