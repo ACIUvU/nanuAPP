@@ -1,7 +1,9 @@
 package com.example.nanu;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 
+import android.Manifest;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
@@ -43,8 +45,8 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class PublishActivity extends AppCompatActivity {
-
+public class PublishActivity extends BaseActivity {
+    private static String[] PERMISSIONS_STORAGE = {Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.CAMERA };
     private GridView noScrollgridview;
     private GridAdapter adapter;
     private TextView activity_selectimg_send;
@@ -276,9 +278,10 @@ public class PublishActivity extends AppCompatActivity {
             });
             bt2.setOnClickListener(new View.OnClickListener() {//相册
                 public void onClick(View v) {
-                    Intent intent = new Intent(PublishActivity.this,
-                            TestPicActivity.class);
-                    startActivity(intent);
+//                    Intent intent = new Intent(PublishActivity.this,
+//                            TestPicActivity.class);
+//                    startActivity(intent);
+                    selectImage();
                     dismiss();
                 }
             });
@@ -294,7 +297,23 @@ public class PublishActivity extends AppCompatActivity {
     private static final int TAKE_PICTURE = 0x000000;
     private String path = "";
 
+    private void selectImage() {
+        Intent intent = new Intent();
+        intent.setType("image/*");
+        intent.setAction(Intent.ACTION_GET_CONTENT);
+        startActivityForResult(intent, 100);//(Intent.createChooser(intent, "选择图像..."), PICK_IMAGE_REQUEST);
+    }
     public void photo() {//拍照
+        if (verifyPermissions(PublishActivity.this, PERMISSIONS_STORAGE[2]) == 0) {
+            ActivityCompat.requestPermissions(PublishActivity.this, PERMISSIONS_STORAGE, 3);
+        }else{
+            Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);  //跳转到 ACTION_IMAGE_CAPTURE
+            //判断内存卡是否可用，可用的话就进行存储
+            //putExtra：取值，Uri.fromFile：传一个拍照所得到的文件，fileImg.jpg：文件名
+
+            intent.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(new File(PublishActivity.this.getExternalFilesDir(null), "zy.jpg")));
+            startActivityForResult(intent,101); // 101: 相机的返回码参数
+        }
 //		Intent openCameraIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
 //		File file = new File(Environment.getExternalStorageDirectory()
 //				+ "/myimage/", String.valueOf(System.currentTimeMillis())
@@ -306,24 +325,24 @@ public class PublishActivity extends AppCompatActivity {
 
 
 
-        String status = Environment.getExternalStorageState();
-        if (status.equals(Environment.MEDIA_MOUNTED)) {
-            try {
-                File dir = new File(Environment.getExternalStorageDirectory() + "/" + localTempImgDir);
-                if (!dir.exists())
-                    dir.mkdirs();
-                Intent intent = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
-                f = new File(dir, new Date().getTime() + ".jpg");// localTempImgDir和localTempImageFileName是自己定义的名字
-                Uri u = Uri.fromFile(f);
-                intent.putExtra(MediaStore.Images.Media.ORIENTATION, 0);
-                intent.putExtra(MediaStore.EXTRA_OUTPUT, u);
-                startActivityForResult(intent, TAKE_PICTURE);
-            } catch (Exception e) {
-                Toast.makeText(PublishActivity.this, "没有找到储存目录", Toast.LENGTH_LONG).show();
-            }
-        } else {
-            Toast.makeText(PublishActivity.this, "没有储存卡", Toast.LENGTH_LONG).show();
-        }
+//        String status = Environment.getExternalStorageState();
+//        if (status.equals(Environment.MEDIA_MOUNTED)) {
+//            try {
+//                File dir = new File(Environment.getExternalStorageDirectory() + "/" + localTempImgDir);
+//                if (!dir.exists())
+//                    dir.mkdirs();
+//                Intent intent = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
+//                f = new File(dir, new Date().getTime() + ".jpg");// localTempImgDir和localTempImageFileName是自己定义的名字
+//                Uri u = Uri.fromFile(f);
+//                intent.putExtra(MediaStore.Images.Media.ORIENTATION, 0);
+//                intent.putExtra(MediaStore.EXTRA_OUTPUT, u);
+//                startActivityForResult(intent, TAKE_PICTURE);
+//            } catch (Exception e) {
+//                Toast.makeText(PublishActivity.this, "没有找到储存目录", Toast.LENGTH_LONG).show();
+//            }
+//        } else {
+//            Toast.makeText(PublishActivity.this, "没有储存卡", Toast.LENGTH_LONG).show();
+//        }
     }
 
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
