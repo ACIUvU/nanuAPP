@@ -304,45 +304,45 @@ public class PublishActivity extends BaseActivity {
         startActivityForResult(intent, 100);//(Intent.createChooser(intent, "选择图像..."), PICK_IMAGE_REQUEST);
     }
     public void photo() {//拍照
-        if (verifyPermissions(PublishActivity.this, PERMISSIONS_STORAGE[2]) == 0) {
-            ActivityCompat.requestPermissions(PublishActivity.this, PERMISSIONS_STORAGE, 3);
-        }else{
-            Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);  //跳转到 ACTION_IMAGE_CAPTURE
-            //判断内存卡是否可用，可用的话就进行存储
-            //putExtra：取值，Uri.fromFile：传一个拍照所得到的文件，fileImg.jpg：文件名
-
-            intent.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(new File(PublishActivity.this.getExternalFilesDir(null), "zy.jpg")));
-            startActivityForResult(intent,101); // 101: 相机的返回码参数
-        }
-//		Intent openCameraIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-//		File file = new File(Environment.getExternalStorageDirectory()
-//				+ "/myimage/", String.valueOf(System.currentTimeMillis())
-//				+ ".jpg");
-//		path = file.getPath();
-//		Uri imageUri = Uri.fromFile(file);
-//		openCameraIntent.putExtra(MediaStore.EXTRA_OUTPUT, imageUri);
-//		startActivityForResult(openCameraIntent, TAKE_PICTURE);
-
-
-
-//        String status = Environment.getExternalStorageState();
-//        if (status.equals(Environment.MEDIA_MOUNTED)) {
-//            try {
-//                File dir = new File(Environment.getExternalStorageDirectory() + "/" + localTempImgDir);
-//                if (!dir.exists())
-//                    dir.mkdirs();
-//                Intent intent = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
-//                f = new File(dir, new Date().getTime() + ".jpg");// localTempImgDir和localTempImageFileName是自己定义的名字
-//                Uri u = Uri.fromFile(f);
-//                intent.putExtra(MediaStore.Images.Media.ORIENTATION, 0);
-//                intent.putExtra(MediaStore.EXTRA_OUTPUT, u);
-//                startActivityForResult(intent, TAKE_PICTURE);
-//            } catch (Exception e) {
-//                Toast.makeText(PublishActivity.this, "没有找到储存目录", Toast.LENGTH_LONG).show();
-//            }
-//        } else {
-//            Toast.makeText(PublishActivity.this, "没有储存卡", Toast.LENGTH_LONG).show();
+//        if (verifyPermissions(PublishActivity.this, PERMISSIONS_STORAGE[2]) == 0) {
+//            ActivityCompat.requestPermissions(PublishActivity.this, PERMISSIONS_STORAGE, 3);
+//        }else{
+//            Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);  //跳转到 ACTION_IMAGE_CAPTURE
+//            //判断内存卡是否可用，可用的话就进行存储
+//            //putExtra：取值，Uri.fromFile：传一个拍照所得到的文件，fileImg.jpg：文件名
+//
+//            intent.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(new File(PublishActivity.this.getExternalFilesDir(null), "zy.jpg")));
+//            startActivityForResult(intent,101); // 101: 相机的返回码参数
 //        }
+		Intent openCameraIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+		File file = new File(PublishActivity.this.getExternalFilesDir(null)
+				+ "/myimage/", String.valueOf(System.currentTimeMillis())
+				+ ".jpg");
+		path = file.getPath();
+		Uri imageUri = Uri.fromFile(file);
+		openCameraIntent.putExtra(MediaStore.EXTRA_OUTPUT, imageUri);
+		startActivityForResult(openCameraIntent, TAKE_PICTURE);
+
+
+
+        File status = PublishActivity.this.getExternalFilesDir(null);
+        if (status.equals(Environment.MEDIA_MOUNTED)) {
+            try {
+                File dir = new File(PublishActivity.this.getExternalFilesDir(null) + "/" + localTempImgDir);
+                if (!dir.exists())
+                    dir.mkdirs();
+                Intent intent = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
+                f = new File(dir, new Date().getTime() + ".jpg");// localTempImgDir和localTempImageFileName是自己定义的名字
+                Uri u = Uri.fromFile(f);
+                intent.putExtra(MediaStore.Images.Media.ORIENTATION, 0);
+                intent.putExtra(MediaStore.EXTRA_OUTPUT, u);
+                startActivityForResult(intent, TAKE_PICTURE);
+            } catch (Exception e) {
+                Toast.makeText(PublishActivity.this, "没有找到储存目录", Toast.LENGTH_LONG).show();
+            }
+        } else {
+            Toast.makeText(PublishActivity.this, "没有储存卡", Toast.LENGTH_LONG).show();
+        }
     }
 
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -351,14 +351,14 @@ public class PublishActivity extends BaseActivity {
                 if (Bimp.drr.size() < 9 && resultCode == -1) {
 
                     // 拍照
-//				File f = new File(Environment.getExternalStorageDirectory() + "/" + localTempImgDir + "/" + localTempImgFileName);
+//				File f = new File(PublishActivity.this.getExternalFilesDir(null) + "/" + localTempImgDir + "/" + localTempImgFileName);
                     try {
                         Uri u = Uri.parse(android.provider.MediaStore.Images.Media.insertImage(getContentResolver(), f.getAbsolutePath(), null, null));
                         path = f.getPath();
-//					String URL = getRealFilePath(this, u);
-//					Intent intent = new Intent(MyHeadPicture.this, ClipImageActivity.class);
-//					intent.putExtra("bitmapURL", URL);
-//					startActivity(intent);
+//					    String URL = getRealFilePath(this, u);
+//					    Intent intent = new Intent(MyHeadPicture.this, ClipImageActivity.class);
+//					    intent.putExtra("bitmapURL", URL);
+//					    startActivity(intent);
                     } catch (FileNotFoundException e) {
                         e.printStackTrace();
                     }
@@ -370,6 +370,5 @@ public class PublishActivity extends BaseActivity {
                 break;
         }
     }
-
 }
 

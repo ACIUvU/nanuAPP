@@ -12,4 +12,5 @@
         android:src="@drawable/ic_launcher" >
     </ImageView>
 
+
 </LinearLayout>
