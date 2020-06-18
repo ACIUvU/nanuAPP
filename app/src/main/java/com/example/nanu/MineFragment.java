@@ -14,8 +14,6 @@ import android.widget.Toast;
 
 import androidx.fragment.app.Fragment;
 
-import com.example.nanu.R;
-
 
 //”我的“一栏
 public class MineFragment extends Fragment {
@@ -91,7 +89,7 @@ public class MineFragment extends Fragment {
             public void onClick(View view) {
                 System.out.println("click button 1");
                 Toast.makeText(getActivity(),"1",Toast.LENGTH_LONG).show();
-                Intent intent = new Intent(getActivity(), MineArticle.class);
+                Intent intent = new Intent(getActivity(), MineArticleActivity.class);
                 startActivity(intent);
             }
         });

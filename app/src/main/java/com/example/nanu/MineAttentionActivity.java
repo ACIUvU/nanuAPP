@@ -27,7 +27,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class MineAttention extends AppCompatActivity {
+public class MineAttentionActivity extends AppCompatActivity {
 
     private String TAG = MainActivity.class.getSimpleName();
     private static String url="";
@@ -56,7 +56,7 @@ public class MineAttention extends AppCompatActivity {
         protected void onPreExecute() {
             super.onPreExecute();
             // Showing progress dialog
-            pDialog = new ProgressDialog(MineAttention.this);
+            pDialog = new ProgressDialog(MineAttentionActivity.this);
             pDialog.setMessage("Please wait...");
             pDialog.setCancelable(false);
             pDialog.show();
