@@ -19,7 +19,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="RecommodContentActivity"></activity>
+<!--        <activity android:name="RecommodContentActivity"></activity>-->
+<!--        不进行注释无法run-->
         <!-- 主活动 -->
         <activity
             android:name=".MainActivity"
