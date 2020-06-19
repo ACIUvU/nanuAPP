@@ -66,7 +66,7 @@
                    /></p>
         <?php echo ($arts["content"]); ?>
           </div>
-        <div>文章版权属于文章作者所有，转载请注明：<a rel="bookmark" title=" 该去北上广哭，还是回小城市笑 " href=" http://yispace.net/42805.html ">http://yispace.net/42805.html</a>
+        <div>文章版权属于文章作者所有，转载请注明：<a rel="bookmark" title=" 文章 " ></a>
         </div>
 
       
@@ -88,9 +88,7 @@
             </script>
             <!-- Baidu Button END --></div>
 
-        <!-- 广告代码1 -->
-
-        <!-- 百度推荐 -->
+      
         <div style="margin-left: -12px; margin-bottom: -3px;">
             <script>document.write(unescape('%3Cdiv id="hm_t_61751"%3E%3C/div%3E%3Cscript charset="utf-8" src="http://crs.baidu.com/t.js?siteId=99c2c06a529fc4c8787deb597141fe76&planId=61751&async=0&referer=') + encodeURIComponent(document.referrer) + '&title=' + encodeURIComponent(document.title) + '&rnd=' + (+new Date) + unescape('"%3E%3C/script%3E'));</script>
         </div>
@@ -104,7 +102,7 @@
 
 <script type='text/javascript' src='http://yispace.net/wp-includes/js/wp-embed.min.js?ver=4.5.2'></script>
 
-<!-- 百度自动推送 -->
+
 <script>
     (function () {
         var bp = document.createElement('script');

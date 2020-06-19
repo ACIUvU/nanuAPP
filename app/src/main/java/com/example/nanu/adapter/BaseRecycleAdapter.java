@@ -12,9 +12,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
- * Created by yi.huangxing on 17/12/13.类描述:
- */
+
 
 public  abstract  class BaseRecycleAdapter  <T> extends RecyclerView.Adapter<BaseRecycleAdapter.BaseViewHolder>{
 
