@@ -245,6 +245,7 @@ public class DesignFragment extends Fragment{
 
     // 初始化设计专题内容
     public void initUserDesign(){
+
         UserDesign userDesign1 = new UserDesign();
         userDesign1.setName("电子发烧友？快来看看吧~");
         userDesign1.setType(0);
@@ -311,6 +312,8 @@ public class DesignFragment extends Fragment{
         userDesign1.setCommendation(98);
         if(SQLiteDB.getInstance(getActivity().getApplicationContext()).saveUserDesign(userDesign1)) System.out.println("插入设计专题成功!");
         else System.out.println("插入设计专题失败!");
+
+
     }
 
 }

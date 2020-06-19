@@ -15,7 +15,7 @@ import static com.example.nanu.data_structure.UserArticle.TITLE;
 
 
 public class SQLiteDB {
-    public static final String DB_NAME = "curiosity_db";
+    public static final String DB_NAME = "nanu_db";
     public static final int DB_VERSION = 1;
     private static SQLiteDB sqliteDB;
     private SQLiteDatabase db;

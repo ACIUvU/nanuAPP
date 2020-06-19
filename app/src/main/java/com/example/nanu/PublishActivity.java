@@ -359,66 +359,6 @@ public class PublishActivity extends BaseActivity {
 //        Init();
 //    }
 //
-//    public void Init() {
-//        noScrollgridview = (GridView) findViewById(R.id.noScrollgridview);
-//        noScrollgridview.setSelector(new ColorDrawable(Color.TRANSPARENT));
-//        adapter = new GridAdapter(this);
-//        adapter.update();
-//        noScrollgridview.setAdapter(adapter);
-//        noScrollgridview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//
-//            public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
-//                                    long arg3) {
-//                if (arg2 == Bimp.bmp.size()) {
-//                    new PopupWindows(PublishActivity.this, noScrollgridview);
-//                } else {
-//                    Intent intent = new Intent(PublishActivity.this,
-//                            PhotoActivity.class);
-//                    intent.putExtra("ID", arg2);
-//                    startActivity(intent);
-//                }
-//            }
-//        });
-//        activity_selectimg_send = (TextView) findViewById(R.id.activity_selectimg_send);
-//        activity_selectimg_send.setOnClickListener(new View.OnClickListener() {
-//
-//            public void onClick(View v) {
-//                List<String> list = new ArrayList<String>();
-//                for (int i = 0; i < Bimp.drr.size(); i++) {
-//                    String Str = Bimp.drr.get(i).substring(
-//                            Bimp.drr.get(i).lastIndexOf("/") + 1,
-//                            Bimp.drr.get(i).lastIndexOf("."));
-//                    list.add(FileUtils.SDPATH+Str+".JPEG");
-//                    File fii=new File(list.get(i).toString());
-//                    Log.d("Pu", "str=="+fii.getName());
-//                    Log.d("Pu", "str=="+list.get(i).toString());
-//                }
-//                Toast.makeText(PublishActivity.this,"发布成功",Toast.LENGTH_LONG).show();
-//                // 高清的压缩图片全部就在  list 路径里面了
-//                // 高清的压缩过的 bmp 对象  都在 Bimp.bmp里面
-//                // 完成上传服务器后 .........
-//                FileUtils.deleteDir();
-//            }
-//        });
-//    }
-//
-//    @SuppressLint("HandlerLeak")
-//    public class GridAdapter extends BaseAdapter {
-//        private LayoutInflater inflater; // 视图容器
-//        private int selectedPosition = -1;// 选中的位置
-//        private boolean shape;
-//
-//        public boolean isShape() {
-//            return shape;
-//        }
-//
-//        public void setShape(boolean shape) {
-//            this.shape = shape;
-//        }
-//
-//        public GridAdapter(Context context) {
-//            inflater = LayoutInflater.from(context);
-//        }
 //
 //        public void update() {
 //            loading();
@@ -619,54 +559,7 @@ public class PublishActivity extends BaseActivity {
 //				+ ".jpg");
 //		path = file.getPath();
 //		Uri imageUri = Uri.fromFile(file);
-//		openCameraIntent.putExtra(MediaStore.EXTRA_OUTPUT, imageUri);
-//		startActivityForResult(openCameraIntent, TAKE_PICTURE);
 //
-//
-//
-//        File status = PublishActivity.this.getExternalFilesDir(null);
-//        if (status.equals(Environment.MEDIA_MOUNTED)) {
-//            try {
-//                File dir = new File(PublishActivity.this.getExternalFilesDir(null) + "/" + localTempImgDir);
-//                if (!dir.exists())
-//                    dir.mkdirs();
-//                Intent intent = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
-//                f = new File(dir, new Date().getTime() + ".jpg");// localTempImgDir和localTempImageFileName是自己定义的名字
-//                Uri u = Uri.fromFile(f);
-//                intent.putExtra(MediaStore.Images.Media.ORIENTATION, 0);
-//                intent.putExtra(MediaStore.EXTRA_OUTPUT, u);
-//                startActivityForResult(intent, TAKE_PICTURE);
-//            } catch (Exception e) {
-//                Toast.makeText(PublishActivity.this, "没有找到储存目录", Toast.LENGTH_LONG).show();
-//            }
-//        } else {
-//            Toast.makeText(PublishActivity.this, "没有储存卡", Toast.LENGTH_LONG).show();
-//        }
-//    }
-//
-//    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-//        switch (requestCode) {
-//            case TAKE_PICTURE:
-//                if (Bimp.drr.size() < 9 && resultCode == -1) {
-//
-//                    // 拍照
-////				File f = new File(PublishActivity.this.getExternalFilesDir(null) + "/" + localTempImgDir + "/" + localTempImgFileName);
-//                    try {
-//                        Uri u = Uri.parse(android.provider.MediaStore.Images.Media.insertImage(getContentResolver(), f.getAbsolutePath(), null, null));
-//                        path = f.getPath();
-////					    String URL = getRealFilePath(this, u);
-////					    Intent intent = new Intent(MyHeadPicture.this, ClipImageActivity.class);
-////					    intent.putExtra("bitmapURL", URL);
-////					    startActivity(intent);
-//                    } catch (FileNotFoundException e) {
-//                        e.printStackTrace();
-//                    }
-//
-//                    Bimp.drr.add(path);
-//                    adapter.notifyDataSetChanged();
-//                    Toast.makeText(getApplicationContext(), Bimp.drr.size()+"", Toast.LENGTH_LONG).show();
-//                }
-//                break;
 //        }
 //    }
 }
