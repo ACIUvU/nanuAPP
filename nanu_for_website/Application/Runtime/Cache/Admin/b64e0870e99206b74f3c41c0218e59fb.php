@@ -13,13 +13,14 @@
         <div class="topbar-logo-wrap clearfix">
             <h1 class="topbar-logo none"><a href="index.html" class="navbar-brand">后台管理</a></h1>
             <ul class="navbar-list clearfix">
-                <li><a class="on" href="index.html">首页</a></li>
+                <li><a class="on" href="/boke/index.php/Admin/Index/index">首页</a></li>
             </ul>
         </div>
         <div class="top-info-wrap">
             <ul class="top-info-list clearfix">
                 <li><a href="#">用户:<?php echo $_SESSION['username']; ?></a></li>
-                <li><a href="/boke/index.php/Admin/Admin/edit/id/"><?php echo $_SESSION['id']; ?>修改密码</a></li>
+                <li><a href="/boke/index.php/Admin/Login/add">注册</a></li>
+                <li><a href="/boke/index.php/Admin/Admin/edit/id/<?php echo $_SESSION['id']; ?>">修改密码</a></li>
                 <li><a href="/boke/index.php/Admin/Admin/logout">退出</a></li>
             </ul>
         </div>
@@ -49,7 +50,7 @@
     <div class="main-wrap">
 
         <div class="crumb-wrap">
-            <div class="crumb-list"><i class="icon-font"></i><a href="/jscss/admin/design/">首页</a><span class="crumb-step">&gt;</span><a class="crumb-name" href="/jscss/admin/design/">类别管理</a><span class="crumb-step">&gt;</span><span>修改类别</span></div>
+            <div class="crumb-list"><i class="icon-font"></i><a href="/jscss/admin/design/">首页</a><span class="crumb-step">&gt;</span><a class="crumb-name" href="/jscss/admin/design/">关注管理</a><span class="crumb-step">&gt;</span><span>修改</span></div>
         </div>
         <div class="result-wrap">
             <div class="result-content">
@@ -59,16 +60,16 @@
                     <table class="insert-tab" width="100%">
                         <tbody>
                             <tr>
-                                <th><i class="require-red">*</i>管理员名：</th>
+                                <th><i class="require-red">*</i>用户名：</th>
                                 <td>
                                     <input class="common-text required" id="username" name="username" size="50" value="<?php echo ($adminr["username"]); ?>" type="text">
                                 </td>
                             </tr>
                             <tr>
-                                <th><i class="require-red">*</i>管理员密码：</th>
+                                <th><i class="require-red">*</i>密码：</th>
                                 <td>
                                     <input class="common-text required" id="password" name="password" size="50" value="" type="text">
-                                    留空就表示不修改
+                                   
                                 </td>
                             </tr>
  

@@ -11,48 +11,7 @@
     <script src="__PUBLIC__/style/jquery.min.js"></script>
     <script src="__PUBLIC__/style/post.js"></script>
  
-    <script type="text/javascript">
-        window._wpemojiSettings = {
-            "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/72x72\/",
-            "ext": ".png",
-            "source": {"concatemoji": "http:\/\/yispace.net\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.5.2"}
-        };
-        !function (a, b, c) {
-            function d(a) {
-                var c, d, e, f = b.createElement("canvas"), g = f.getContext && f.getContext("2d"), h = String.fromCharCode;
-                if (!g || !g.fillText)return !1;
-                switch (g.textBaseline = "top", g.font = "600 32px Arial", a) {
-                    case"flag":
-                        return g.fillText(h(55356, 56806, 55356, 56826), 0, 0), f.toDataURL().length > 3e3;
-                    case"diversity":
-                        return g.fillText(h(55356, 57221), 0, 0), c = g.getImageData(16, 16, 1, 1).data, d = c[0] + "," + c[1] + "," + c[2] + "," + c[3], g.fillText(h(55356, 57221, 55356, 57343), 0, 0), c = g.getImageData(16, 16, 1, 1).data, e = c[0] + "," + c[1] + "," + c[2] + "," + c[3], d !== e;
-                    case"simple":
-                        return g.fillText(h(55357, 56835), 0, 0), 0 !== g.getImageData(16, 16, 1, 1).data[0];
-                    case"unicode8":
-                        return g.fillText(h(55356, 57135), 0, 0), 0 !== g.getImageData(16, 16, 1, 1).data[0]
-                }
-                return !1
-            }
-
-            function e(a) {
-                var c = b.createElement("script");
-                c.src = a, c.type = "text/javascript", b.getElementsByTagName("head")[0].appendChild(c)
-            }
-
-            var f, g, h, i;
-            for (i = Array("simple", "flag", "unicode8", "diversity"), c.supports = {
-                everything: !0,
-                everythingExceptFlag: !0
-            }, h = 0; h < i.length; h++)c.supports[i[h]] = d(i[h]), c.supports.everything = c.supports.everything && c.supports[i[h]], "flag" !== i[h] && (c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && c.supports[i[h]]);
-            c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && !c.supports.flag, c.DOMReady = !1, c.readyCallback = function () {
-                c.DOMReady = !0
-            }, c.supports.everything || (g = function () {
-                c.readyCallback()
-            }, b.addEventListener ? (b.addEventListener("DOMContentLoaded", g, !1), a.addEventListener("load", g, !1)) : (a.attachEvent("onload", g), b.attachEvent("onreadystatechange", function () {
-                "complete" === b.readyState && c.readyCallback()
-            })), f = c.source || {}, f.concatemoji ? e(f.concatemoji) : f.wpemoji && f.twemoji && (e(f.twemoji), e(f.wpemoji)))
-        }(window, document, window._wpemojiSettings);
-    </script>
+  
     <style type="text/css">
         img.wp-smiley,
         img.emoji {
@@ -74,13 +33,13 @@
     } </script>
 
 </head>
-<body class="single single-post postid-42805 single-format-standard">
+<body>
 
 <include file="Public/head" />
 <div class="wrapper">
     <div class="content">
 
-        <div class="meta">
+        <div >
             <h1 class="meta-tit">{$arts.title}</h1>
             <p class="meta-info">小组：<a href="__APP__">{$catename}</a> &nbsp;&nbsp; 发表日期：{$arts.time} &nbsp;&nbsp; </p>
         </div>
@@ -94,7 +53,7 @@
                    /></p>
         {$arts.content}
           </div>
-        <div>文章版权属于文章作者所有，转载请注明：<a rel="bookmark" title=" 该去北上广哭，还是回小城市笑 " href=" http://yispace.net/42805.html ">http://yispace.net/42805.html</a>
+        <div>文章版权属于文章作者所有，转载请注明：<a rel="bookmark" title=" 文章 " ></a>
         </div>
 
       
@@ -116,9 +75,7 @@
             </script>
             <!-- Baidu Button END --></div>
 
-        <!-- 广告代码1 -->
-
-        <!-- 百度推荐 -->
+      
         <div style="margin-left: -12px; margin-bottom: -3px;">
             <script>document.write(unescape('%3Cdiv id="hm_t_61751"%3E%3C/div%3E%3Cscript charset="utf-8" src="http://crs.baidu.com/t.js?siteId=99c2c06a529fc4c8787deb597141fe76&planId=61751&async=0&referer=') + encodeURIComponent(document.referrer) + '&title=' + encodeURIComponent(document.title) + '&rnd=' + (+new Date) + unescape('"%3E%3C/script%3E'));</script>
         </div>
@@ -128,22 +85,11 @@
 
 
 
-<div id="bottom">
-    <div id="bottom-content">
-        <div id="content-left">
-            <p> 网站位置 | 关于我们 | 意见反馈 |</p>
-        </div>
-        <div id="content-right">
-            <p>友情链接</p>
-            <p>PHP中文网  |  小猪CMS</p>
-            <p>公司网址：php.cn</p>
-        </div>
-    </div>
-</div>
+
 
 <script type='text/javascript' src='http://yispace.net/wp-includes/js/wp-embed.min.js?ver=4.5.2'></script>
 
-<!-- 百度自动推送 -->
+
 <script>
     (function () {
         var bp = document.createElement('script');

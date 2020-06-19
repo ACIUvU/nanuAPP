@@ -16,13 +16,13 @@
         <div class="topbar-logo-wrap clearfix">
             <h1 class="topbar-logo none"><a href="index.html" class="navbar-brand">后台管理</a></h1>
             <ul class="navbar-list clearfix">
-                <li><a class="on" href="index.html">首页</a></li>
-                <li><a href="#" target="_blank">网站首页</a></li>
+                <li><a class="on" href="/boke/index.php/Admin/Index/index">首页</a></li>
             </ul>
         </div>
         <div class="top-info-wrap">
             <ul class="top-info-list clearfix">
-                <li><a href="#">管理员:<?php echo $_SESSION['username']; ?></a></li>
+                <li><a href="#">用户:<?php echo $_SESSION['username']; ?></a></li>
+                <li><a href="/boke/index.php/Admin/Login/add">注册</a></li>
                 <li><a href="/boke/index.php/Admin/Admin/edit/id/<?php echo $_SESSION['id']; ?>">修改密码</a></li>
                 <li><a href="/boke/index.php/Admin/Admin/logout">退出</a></li>
             </ul>
@@ -41,9 +41,9 @@
                     <ul class="sub-menu">
                         <li><a href="/boke/index.php/Admin/Article/lst"><i class="icon-font">&#xe008;</i>文章管理</a></li>
                         <li><a href="/boke/index.php/Admin/Cate/lst"><i class="icon-font">&#xe006;</i>分类管理</a></li>
-                        <li><a href="design.html"><i class="icon-font">&#xe012;</i>评论管理</a></li>
+                
                         <li><a href="/boke/index.php/Admin/Link/lst"><i class="icon-font">&#xe052;</i>友情链接</a></li>
-                        <li><a href="/boke/index.php/Admin/Admin/lst"><i class="icon-font">&#xe033;</i>管理员管理</a></li>
+                        <li><a href="/boke/index.php/Admin/Admin/lst"><i class="icon-font">&#xe033;</i>关注列表</a></li>
                     </ul>
                 </li>
             </ul>
@@ -53,7 +53,7 @@
     <div class="main-wrap">
 
         <div class="crumb-wrap">
-            <div class="crumb-list"><i class="icon-font"></i><a href="/jscss/admin/design/">首页</a><span class="crumb-step">&gt;</span><a class="crumb-name" href="/jscss/admin/design/">链接管理</a><span class="crumb-step">&gt;</span><span>新增链接</span></div>
+            <div class="crumb-list"><i class="icon-font"></i><a href="/boke/index.php/Admin/Index/index">首页</a><span class="crumb-step">&gt;</span><span class="crumb-name">&gt;</span><span>文章管理</span><span class="crumb-step">&gt;</span><span>新增文章</span></div>
         </div>
         <div class="result-wrap">
             <div class="result-content">
