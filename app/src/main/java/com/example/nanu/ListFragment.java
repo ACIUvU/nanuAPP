@@ -89,7 +89,7 @@ public class ListFragment extends Fragment implements View.OnClickListener, View
 
         fragmentList = new ArrayList<>();
         fragmentList.add(new RecommodFragment());
-        fragmentList.add(new AttentionFragment());
+        fragmentList.add(new AttentionArticle());
 
         mAdapter = new VpAdapter(getChildFragmentManager());
         viewPager.setAdapter(mAdapter);
