@@ -18,7 +18,7 @@ public class HeadActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.mine_info);
-
+//个人信息界面
         Button sub = (Button)findViewById(R.id.btn_info_sub);
         Button back = (Button)findViewById(R.id.btn_back);
         Button exit = (Button)findViewById(R.id.btn_exit);

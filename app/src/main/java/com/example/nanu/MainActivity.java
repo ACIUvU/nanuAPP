@@ -22,13 +22,13 @@ import android.widget.RadioGroup;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements ListFragment.OnFragmentInteractionListener,
-        DesignFragment.OnFragmentInteractionListener, com.example.nanu.MineFragment.OnFragmentInteractionListener,RecommodFragment.OnFragmentInteractionListener,AttentionFragment.OnFragmentInteractionListener{
+        DesignFragment.OnFragmentInteractionListener, com.example.nanu.MineFragment.OnFragmentInteractionListener,RecommodFragment.OnFragmentInteractionListener,AttentionArticle.OnFragmentInteractionListener,AttentionFragment.OnFragmentInteractionListener{
 
     private RadioGroup rg_tab_bar;
     private RadioButton rb_design;
-    private ListFragment listFragment;
-    private DesignFragment designFragment;
-    private MineFragment mineFragment;
+    private ListFragment listFragment;//圈子页面
+    private DesignFragment designFragment;//探索页面
+    private MineFragment mineFragment;//我的页面
     private FragmentManager fManager;
 
 

@@ -15,7 +15,7 @@ public class FeedbackActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.mine_feedback);
-
+//退出界面
         Button button1 = (Button)findViewById(R.id.btn_feedback_sub);
         Button button2 = (Button)findViewById(R.id.btn_back);
 

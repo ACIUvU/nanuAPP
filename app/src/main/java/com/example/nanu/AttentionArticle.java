@@ -42,8 +42,8 @@ public class AttentionArticle extends Fragment {
     }
 
 
-    public static AttentionFragment newInstance(String param1, String param2) {
-        AttentionFragment fragment = new AttentionFragment();
+    public static AttentionArticle newInstance(String param1, String param2) {
+        AttentionArticle fragment = new AttentionArticle();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -63,7 +63,7 @@ public class AttentionArticle extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_attention, container, false);
+        View view = inflater.inflate(R.layout.fragment_article, container, false);
         return view;
     }
     @Override
@@ -73,7 +73,7 @@ public class AttentionArticle extends Fragment {
         ListView list_attention = (ListView)getView().findViewById(R.id.list_article);
         AttentionPeopleAdapter ma = new AttentionPeopleAdapter(datas, getActivity());
         list_attention.setAdapter(ma);
-        PeopleData data = new PeopleData("GitHubDaily", "每日分享GitHub优质项目",R.drawable.github);
+        PeopleData data = new PeopleData("wangushendiGitHubDaily", "每日分享GitHub优质项目",R.drawable.github);
         datas.add(data);
         data = new PeopleData("开源工坊", "知名互联网分享博主",R.drawable.qt);
         datas.add(data);
@@ -92,7 +92,7 @@ public class AttentionArticle extends Fragment {
                 Intent intent  =new Intent(getActivity(),MainActivity.class);
                 intent.putExtra("obj", (CharSequence) data1);
                 Bundle bundle1 = new Bundle();
-                bundle1.putString("arg1","关注的人详情");
+                bundle1.putString("arg1","aaa关注的人详情");
                 bundle1.putString("name",data1.getName());
                 intent.putExtra("bundle",bundle1);
                 startActivity(intent);

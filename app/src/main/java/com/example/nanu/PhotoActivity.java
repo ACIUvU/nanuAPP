@@ -20,7 +20,7 @@ import android.widget.RelativeLayout;
 import com.example.nanu.R;
 import com.example.nanu.model.Bimp;
 import com.example.nanu.model.FileUtils;
-
+//相片的处理
 public class PhotoActivity extends AppCompatActivity {
 
     private ArrayList<View> listViews = null;
@@ -51,6 +51,7 @@ public class PhotoActivity extends AppCompatActivity {
         max = Bimp.max;
 
         Button photo_bt_exit = (Button) findViewById(R.id.photo_bt_exit);
+
         photo_bt_exit.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 

@@ -33,7 +33,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-
+//初始化探索页面和定义搜索按钮
 public class DesignFragment extends Fragment{
     private static final String TAG = MainActivity.class.getSimpleName();
 

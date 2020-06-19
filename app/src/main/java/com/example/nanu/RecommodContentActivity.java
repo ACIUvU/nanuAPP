@@ -1,6 +1,6 @@
 package com.example.nanu;
 
-
+//文章详情界面
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -37,7 +37,7 @@ public class RecommodContentActivity extends AppCompatActivity {
                 +"作者："+SQLiteDB.getInstance(getApplicationContext()).queryUserInfo(SQLiteDB.getInstance(getApplicationContext()).queryArticleInfo(article_id).getUserId()).getName()+"\n"
                 +"内容："+SQLiteDB.getInstance(getApplicationContext()).queryArticleInfo(article_id).getContent()+"\n"
                 +"点赞数："+SQLiteDB.getInstance(getApplicationContext()).queryArticleInfo(article_id).getCommendation());
-    }
+    }//显示的文章内容
     private class MyListener implements View.OnClickListener {
         private int cnt=0;
         @Override

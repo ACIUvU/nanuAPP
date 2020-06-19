@@ -80,16 +80,17 @@ public class ListFragment extends Fragment implements View.OnClickListener, View
         return view;
     }
     private void initView(View view){
-        viewPager = view.findViewById(R.id.home_vp_fragment);
-        textView1 = view.findViewById(R.id.home_tab_menu_recommod);
-        textView2 = view.findViewById(R.id.home_tab_menu_attention);
+        viewPager = view.findViewById(R.id.home_vp_fragment);//下面的文章
+        textView1 = view.findViewById(R.id.home_tab_menu_recommod);//推荐
+        textView2 = view.findViewById(R.id.home_tab_menu_attention);//关注按钮
         viewPager.addOnPageChangeListener(this);
         textView1.setOnClickListener(this);
         textView2.setOnClickListener(this);
 
         fragmentList = new ArrayList<>();
         fragmentList.add(new RecommodFragment());
-        fragmentList.add(new AttentionFragment());
+//        fragmentList.add(new AttentionFragment());
+        fragmentList.add(new AttentionArticle());
 
         mAdapter = new VpAdapter(getChildFragmentManager());
         viewPager.setAdapter(mAdapter);
@@ -130,7 +131,7 @@ public class ListFragment extends Fragment implements View.OnClickListener, View
                 viewPager.setCurrentItem(0);
                 break;
             case R.id.home_tab_menu_attention:
-                viewPager.setCurrentItem(1);
+                viewPager.setCurrentItem(1);//关注列表
                 break;
         }
 

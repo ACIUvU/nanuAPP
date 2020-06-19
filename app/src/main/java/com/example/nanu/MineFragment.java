@@ -14,7 +14,7 @@ import android.widget.Toast;
 
 import androidx.fragment.app.Fragment;
 
-
+//主界面中我的一栏
 //”我的“一栏
 public class MineFragment extends Fragment {
 
@@ -79,7 +79,7 @@ public class MineFragment extends Fragment {
             public void onClick(View view) {
                 System.out.println("click imagebutton");
                 Toast.makeText(getActivity(),"个人资料",Toast.LENGTH_LONG).show();
-                Intent intent = new Intent(getActivity(), HeadActivity.class);
+                Intent intent = new Intent(getActivity(), HeadActivity.class);//跳转到个人信息界面
                 startActivity(intent);
             }
         });
@@ -89,7 +89,7 @@ public class MineFragment extends Fragment {
             public void onClick(View view) {
                 System.out.println("click button 1");
                 Toast.makeText(getActivity(),"1",Toast.LENGTH_LONG).show();
-                Intent intent = new Intent(getActivity(), MineArticleActivity.class);
+                Intent intent = new Intent(getActivity(), MineArticle.class);
                 startActivity(intent);
             }
         });
@@ -119,6 +119,8 @@ public class MineFragment extends Fragment {
                         .beginTransaction()
                         .addToBackStack(null)  //将当前fragment加入到返回栈中
                         .replace(R.id.ly_content, new AttentionFragment()).commit();
+//                        .replace(R.id.ly_content, new AttentionFragment()).commit();
+
             }
         });
 

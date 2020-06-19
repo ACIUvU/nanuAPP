@@ -35,6 +35,7 @@ import java.util.Map;
 public class DesignContentActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
     private GridView gridView;
     private List<Map<String, Object>> dataList;
+
     private int[] designImage1 = { R.drawable.jiating1, R.drawable.jiating2,
             R.drawable.jiating3,R.drawable.jiating4, R.drawable.jiating5};
     private String[] designText1 = {"人物特写 ","古风模特 ","微距景色 ","小白微单 ","旅拍计划 "};
@@ -43,6 +44,7 @@ public class DesignContentActivity extends AppCompatActivity implements AdapterV
             R.drawable.dianzi3,R.drawable.dianzi4,
             R.drawable.dianzi5,R.drawable.dianzi6};
     private String[] designHeadText ={"8K 从容阅不凡","无线降噪运动耳机","随身音响","Sony降噪豆","SurfaceHeadPhones2","VR眼镜"};
+
     private SimpleAdapter simpleAdapter;
 
 

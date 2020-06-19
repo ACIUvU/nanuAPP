@@ -43,8 +43,8 @@
         <activity android:name=".MineProtocolActivity"></activity>
         <activity android:name=".FeedbackActivity"></activity>
         <activity android:name=".HeadActivity"></activity>
-        <activity android:name=".MineAttentionActivity"></activity>
-        <activity android:name=".MineArticleActivity"></activity>
+        <activity android:name=".MineAttention"></activity>
+        <activity android:name=".MineArticle"></activity>
 
         <activity android:name=".ImageGridActivity"></activity>
         <activity android:name=".TestPicActivity" />

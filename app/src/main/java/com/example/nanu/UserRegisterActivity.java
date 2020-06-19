@@ -1,5 +1,5 @@
 package com.example.nanu;
-
+//注册界面
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;

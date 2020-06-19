@@ -29,7 +29,7 @@ import com.example.nanu.model.ImageItem;
 
 public class ImageGridActivity extends AppCompatActivity {
     public static final String EXTRA_IMAGE_LIST = "imagelist";
-
+//选择图片发布
     // ArrayList<Entity> dataList;//
     List<ImageItem> dataList;
     GridView gridView;

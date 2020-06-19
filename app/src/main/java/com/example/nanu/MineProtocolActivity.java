@@ -8,7 +8,7 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.nanu.R;
-
+//用户须知界面
 public class MineProtocolActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {

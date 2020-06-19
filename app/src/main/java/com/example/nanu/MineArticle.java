@@ -8,8 +8,8 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
-
-public class MineArticleActivity extends AppCompatActivity {
+//用户退出登录以及重新注册页面
+public class MineArticle extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.mine_article_user);
@@ -22,10 +22,10 @@ public class MineArticleActivity extends AppCompatActivity {
         exit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MineArticleActivity.this,"退出登录",Toast.LENGTH_LONG).show();
+                Toast.makeText(MineArticle.this,"退出登录",Toast.LENGTH_LONG).show();
                 Intent intent=new Intent();
                 intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
-                intent.setClass(MineArticleActivity.this, MainActivity.class);
+                intent.setClass(MineArticle.this, MainActivity.class);
                 startActivity(intent);
             }
         });
@@ -36,7 +36,7 @@ public class MineArticleActivity extends AppCompatActivity {
 
                 Intent intent=new Intent();
                 intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
-                intent.setClass(MineArticleActivity.this, UserRegisterActivity.class);
+                intent.setClass(MineArticle.this, UserRegisterActivity.class);
                 startActivity(intent);
 
             }

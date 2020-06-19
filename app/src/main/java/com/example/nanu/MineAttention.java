@@ -9,8 +9,6 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.nanu.R;
-
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -26,8 +24,8 @@ import java.net.ProtocolException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashMap;
-
-public class MineAttentionActivity extends AppCompatActivity {
+//暂时未实现此功能
+public class MineAttention extends AppCompatActivity {
 
     private String TAG = MainActivity.class.getSimpleName();
     private static String url="";
@@ -40,7 +38,7 @@ public class MineAttentionActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.mine_attention);
+        setContentView(R.layout.mine_attention);//一个列表
 
         contactList = new ArrayList<>();
 
@@ -56,7 +54,7 @@ public class MineAttentionActivity extends AppCompatActivity {
         protected void onPreExecute() {
             super.onPreExecute();
             // Showing progress dialog
-            pDialog = new ProgressDialog(MineAttentionActivity.this);
+            pDialog = new ProgressDialog(MineAttention.this);
             pDialog.setMessage("Please wait...");
             pDialog.setCancelable(false);
             pDialog.show();
