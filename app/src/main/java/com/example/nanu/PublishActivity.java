@@ -171,11 +171,13 @@ public class PublishActivity extends BaseActivity {
      * 从相册获取2
      */
     public void gallery() {
-        Intent intent = new Intent(
-                Intent.ACTION_PICK,
-                MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+        Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
         startActivityForResult(intent, PHOTO_REQUEST_GALLERY);
     }
+    //        Intent intent = new Intent();
+//        intent.setType("image/*");
+//        intent.setAction(Intent.ACTION_GET_CONTENT);
+//        startActivityForResult(intent, 100);//(Intent.createChooser(intent, "选择图像..."), PICK_IMAGE_REQUEST);
 
 
     @Override
@@ -189,7 +191,7 @@ public class PublishActivity extends BaseActivity {
                     Uri uri = data.getData();
                     String[] proj = {MediaStore.Images.Media.DATA};
                     //好像是android多媒体数据库的封装接口，具体的看Android文档
-                    Cursor cursor = managedQuery(uri, proj, null, null, null);
+                    Cursor cursor = getContentResolver().query(uri, proj, null, null, null);
                     //按我个人理解 这个是获得用户选择的图片的索引值
                     int column_index = cursor.getColumnIndexOrThrow(MediaStore.Images.Media.DATA);
                     //将光标移至开头 ，这个很重要，不小心很容易引起越界
