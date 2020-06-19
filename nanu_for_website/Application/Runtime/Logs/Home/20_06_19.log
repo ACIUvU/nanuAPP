@@ -155,3 +155,524 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001978s ]
 INFO: [ app_end ] --END-- [ RunTime:0.002125s ]
 
+[ 2020-06-19T10:09:53+08:00 ] ::1 /boke/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000769s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000856s ]
+SQL: SHOW COLUMNS FROM `blog_cate` [ RunTime:0.051760s ]
+SQL: SELECT * FROM `blog_cate` ORDER BY sort desc  [ RunTime:0.000253s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.003763s ]
+SQL: SELECT * FROM `blog_link` ORDER BY sort desc  [ RunTime:0.000258s ]
+SQL: SHOW COLUMNS FROM `blog_admin` [ RunTime:0.003043s ]
+SQL: SELECT * FROM `blog_admin`  [ RunTime:0.000311s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.003386s ]
+SQL: SELECT * FROM `blog_article`  [ RunTime:0.000241s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` LIMIT 1   [ RunTime:0.000198s ]
+SQL: SELECT * FROM `blog_article` LIMIT 0,3   [ RunTime:0.000202s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006420s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006468s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000231s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000469s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000532s ]
+
+[ 2020-06-19T10:14:01+08:00 ] ::1 /boke/index.php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000997s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001668s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001844s ]
+SQL: SHOW COLUMNS FROM `blog_cate` [ RunTime:0.060512s ]
+SQL: SELECT * FROM `blog_cate` ORDER BY sort desc  [ RunTime:0.000692s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.012194s ]
+SQL: SELECT * FROM `blog_link` ORDER BY sort desc  [ RunTime:0.000750s ]
+SQL: SHOW COLUMNS FROM `blog_admin` [ RunTime:0.010603s ]
+SQL: SELECT * FROM `blog_admin`  [ RunTime:0.000563s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.010939s ]
+SQL: SELECT * FROM `blog_article`  [ RunTime:0.000679s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` LIMIT 1   [ RunTime:0.000386s ]
+SQL: SELECT * FROM `blog_article` LIMIT 0,3   [ RunTime:0.000545s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000195s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000318s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023459s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023632s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000811s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000923s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001559s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001686s ]
+
+[ 2020-06-19T10:20:06+08:00 ] ::1 /boke/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000968s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001605s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001771s ]
+SQL: SHOW COLUMNS FROM `blog_cate` [ RunTime:0.058916s ]
+SQL: SELECT * FROM `blog_cate` ORDER BY sort desc  [ RunTime:0.000581s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.010487s ]
+SQL: SELECT * FROM `blog_link` ORDER BY sort desc  [ RunTime:0.000724s ]
+SQL: SHOW COLUMNS FROM `blog_admin` [ RunTime:0.011051s ]
+SQL: SELECT * FROM `blog_admin`  [ RunTime:0.000509s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.010611s ]
+SQL: SELECT * FROM `blog_article`  [ RunTime:0.000640s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` LIMIT 1   [ RunTime:0.000353s ]
+SQL: SELECT * FROM `blog_article` LIMIT 0,3   [ RunTime:0.000441s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000248s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000473s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033309s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033489s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000931s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001082s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001728s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001888s ]
+
+[ 2020-06-19T10:42:59+08:00 ] ::1 /boke/index.php/Home/Cate/index/id/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000705s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001136s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001249s ]
+SQL: SHOW COLUMNS FROM `blog_cate` [ RunTime:0.043789s ]
+SQL: SELECT * FROM `blog_cate` ORDER BY sort desc  [ RunTime:0.001177s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.025963s ]
+SQL: SELECT * FROM `blog_link` ORDER BY sort desc  [ RunTime:0.001286s ]
+SQL: SHOW COLUMNS FROM `blog_admin` [ RunTime:0.024876s ]
+SQL: SELECT * FROM `blog_admin`  [ RunTime:0.000964s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.021447s ]
+SQL: SELECT * FROM `blog_article`  [ RunTime:0.000884s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE `cateid` = 10 LIMIT 1   [ RunTime:0.000706s ]
+NOTIC: [8] Undefined variable: page D:\phpStudy\WWW\boke\Application\Home\Controller\CateController.class.php 第 10 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\boke\Application\Home\Controller\CateController.class.php 第 10 行.
+SQL: SELECT * FROM `blog_article` WHERE `cateid` = 10  [ RunTime:0.000682s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000255s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000451s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037315s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037560s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001185s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001338s ]
+
+[ 2020-06-19T10:43:01+08:00 ] ::1 /boke/index.php/Home/Article/index/id/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000109s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002111s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004711s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005139s ]
+SQL: SHOW COLUMNS FROM `blog_cate` [ RunTime:0.063373s ]
+SQL: SELECT * FROM `blog_cate` ORDER BY sort desc  [ RunTime:0.001078s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.014605s ]
+SQL: SELECT * FROM `blog_link` ORDER BY sort desc  [ RunTime:0.000946s ]
+SQL: SHOW COLUMNS FROM `blog_admin` [ RunTime:0.013127s ]
+SQL: SELECT * FROM `blog_admin`  [ RunTime:0.000790s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.013708s ]
+SQL: SELECT * FROM `blog_article`  [ RunTime:0.001022s ]
+SQL: SELECT * FROM `blog_article` WHERE `id` = 12 LIMIT 1   [ RunTime:0.000698s ]
+SQL: SELECT * FROM `blog_cate` WHERE `id` = 4 LIMIT 1   [ RunTime:0.000589s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000186s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000365s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019903s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020111s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001113s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001324s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002310s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002501s ]
+
+[ 2020-06-19T10:47:00+08:00 ] ::1 /boke/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000673s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001110s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001223s ]
+SQL: SHOW COLUMNS FROM `blog_cate` [ RunTime:0.065007s ]
+SQL: SELECT * FROM `blog_cate` ORDER BY sort desc  [ RunTime:0.000895s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.015557s ]
+SQL: SELECT * FROM `blog_link` ORDER BY sort desc  [ RunTime:0.000987s ]
+SQL: SHOW COLUMNS FROM `blog_admin` [ RunTime:0.015466s ]
+SQL: SELECT * FROM `blog_admin`  [ RunTime:0.000826s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.015147s ]
+SQL: SELECT * FROM `blog_article`  [ RunTime:0.001181s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` LIMIT 1   [ RunTime:0.000574s ]
+SQL: SELECT * FROM `blog_article` LIMIT 0,3   [ RunTime:0.000684s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000473s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000782s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056343s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056691s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001682s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001956s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003204s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003568s ]
+
+[ 2020-06-19T10:47:13+08:00 ] ::1 /boke/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000099s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001195s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001825s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002044s ]
+SQL: SHOW COLUMNS FROM `blog_cate` [ RunTime:0.062596s ]
+SQL: SELECT * FROM `blog_cate` ORDER BY sort desc  [ RunTime:0.001099s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.014442s ]
+SQL: SELECT * FROM `blog_link` ORDER BY sort desc  [ RunTime:0.000900s ]
+SQL: SHOW COLUMNS FROM `blog_admin` [ RunTime:0.014145s ]
+SQL: SELECT * FROM `blog_admin`  [ RunTime:0.000736s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.014567s ]
+SQL: SELECT * FROM `blog_article`  [ RunTime:0.000854s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` LIMIT 1   [ RunTime:0.000502s ]
+SQL: SELECT * FROM `blog_article` LIMIT 0,3   [ RunTime:0.000700s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000261s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000437s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030631s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030872s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000901s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001051s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002737s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002905s ]
+
+[ 2020-06-19T10:47:32+08:00 ] ::1 /boke/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000488s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001098s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001202s ]
+SQL: SHOW COLUMNS FROM `blog_cate` [ RunTime:0.057444s ]
+SQL: SELECT * FROM `blog_cate` ORDER BY sort desc  [ RunTime:0.000461s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.007297s ]
+SQL: SELECT * FROM `blog_link` ORDER BY sort desc  [ RunTime:0.000495s ]
+SQL: SHOW COLUMNS FROM `blog_admin` [ RunTime:0.006737s ]
+SQL: SELECT * FROM `blog_admin`  [ RunTime:0.000350s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.007426s ]
+SQL: SELECT * FROM `blog_article`  [ RunTime:0.000503s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` LIMIT 1   [ RunTime:0.000285s ]
+SQL: SELECT * FROM `blog_article` LIMIT 0,3   [ RunTime:0.000400s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000258s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000449s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029246s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029451s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000945s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001102s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001874s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002047s ]
+
+[ 2020-06-19T10:47:45+08:00 ] ::1 /boke/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000585s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000956s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001069s ]
+SQL: SHOW COLUMNS FROM `blog_cate` [ RunTime:0.063287s ]
+SQL: SELECT * FROM `blog_cate` ORDER BY sort desc  [ RunTime:0.000916s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.018865s ]
+SQL: SELECT * FROM `blog_link` ORDER BY sort desc  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `blog_admin` [ RunTime:0.015066s ]
+SQL: SELECT * FROM `blog_admin`  [ RunTime:0.000934s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.016888s ]
+SQL: SELECT * FROM `blog_article`  [ RunTime:0.000835s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` LIMIT 1   [ RunTime:0.000489s ]
+SQL: SELECT * FROM `blog_article` LIMIT 0,3   [ RunTime:0.000837s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000249s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000497s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030559s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030801s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000947s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001101s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002074s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002260s ]
+
+[ 2020-06-19T11:05:10+08:00 ] ::1 /boke/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000581s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001447s ]
+SQL: SHOW COLUMNS FROM `blog_cate` [ RunTime:0.016349s ]
+SQL: SELECT * FROM `blog_cate` ORDER BY sort desc  [ RunTime:0.000868s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.015505s ]
+SQL: SELECT * FROM `blog_link` ORDER BY sort desc  [ RunTime:0.000992s ]
+SQL: SHOW COLUMNS FROM `blog_admin` [ RunTime:0.014204s ]
+SQL: SELECT * FROM `blog_admin`  [ RunTime:0.000928s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.013927s ]
+SQL: SELECT * FROM `blog_article`  [ RunTime:0.000834s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` LIMIT 1   [ RunTime:0.000475s ]
+SQL: SELECT * FROM `blog_article` LIMIT 0,3   [ RunTime:0.000855s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000375s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000624s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035970s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036341s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001325s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001572s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001679s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001856s ]
+
+[ 2020-06-19T11:05:18+08:00 ] ::1 /boke/index.php/Index/index/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000881s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001569s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001743s ]
+SQL: SHOW COLUMNS FROM `blog_cate` [ RunTime:0.064642s ]
+SQL: SELECT * FROM `blog_cate` ORDER BY sort desc  [ RunTime:0.000880s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.017734s ]
+SQL: SELECT * FROM `blog_link` ORDER BY sort desc  [ RunTime:0.001004s ]
+SQL: SHOW COLUMNS FROM `blog_admin` [ RunTime:0.016026s ]
+SQL: SELECT * FROM `blog_admin`  [ RunTime:0.000894s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.016069s ]
+SQL: SELECT * FROM `blog_article`  [ RunTime:0.000970s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` LIMIT 1   [ RunTime:0.000627s ]
+SQL: SELECT * FROM `blog_article` LIMIT 3,3   [ RunTime:0.000809s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000304s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000575s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035880s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036133s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001098s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001250s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002452s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002698s ]
+
+[ 2020-06-19T11:05:29+08:00 ] ::1 /boke/index.php/Home/Cate/index/id/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001134s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001851s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002081s ]
+SQL: SHOW COLUMNS FROM `blog_cate` [ RunTime:0.063548s ]
+SQL: SELECT * FROM `blog_cate` ORDER BY sort desc  [ RunTime:0.000875s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.016305s ]
+SQL: SELECT * FROM `blog_link` ORDER BY sort desc  [ RunTime:0.000981s ]
+SQL: SHOW COLUMNS FROM `blog_admin` [ RunTime:0.020207s ]
+SQL: SELECT * FROM `blog_admin`  [ RunTime:0.000815s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.016638s ]
+SQL: SELECT * FROM `blog_article`  [ RunTime:0.000984s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE `cateid` = 10 LIMIT 1   [ RunTime:0.000710s ]
+NOTIC: [8] Undefined variable: page D:\phpStudy\WWW\boke\Application\Home\Controller\CateController.class.php 第 10 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\boke\Application\Home\Controller\CateController.class.php 第 10 行.
+SQL: SELECT * FROM `blog_article` WHERE `cateid` = 10  [ RunTime:0.001020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000258s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000451s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031967s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032226s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000890s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001044s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002220s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002392s ]
+
+[ 2020-06-19T11:05:31+08:00 ] ::1 /boke/index.php/Home/Cate/index/id/style/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001003s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001839s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002101s ]
+SQL: SHOW COLUMNS FROM `blog_cate` [ RunTime:0.063546s ]
+SQL: SELECT * FROM `blog_cate` ORDER BY sort desc  [ RunTime:0.000931s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.015949s ]
+SQL: SELECT * FROM `blog_link` ORDER BY sort desc  [ RunTime:0.001468s ]
+SQL: SHOW COLUMNS FROM `blog_admin` [ RunTime:0.018616s ]
+SQL: SELECT * FROM `blog_admin`  [ RunTime:0.000848s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.015874s ]
+SQL: SELECT * FROM `blog_article`  [ RunTime:0.000966s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE `cateid` = 0 LIMIT 1   [ RunTime:0.000703s ]
+NOTIC: [8] Undefined variable: page D:\phpStudy\WWW\boke\Application\Home\Controller\CateController.class.php 第 10 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\boke\Application\Home\Controller\CateController.class.php 第 10 行.
+SQL: SELECT * FROM `blog_article` WHERE `cateid` = 0  [ RunTime:0.000871s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000288s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000568s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036056s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036330s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001035s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001206s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002574s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002872s ]
+
+[ 2020-06-19T11:05:39+08:00 ] ::1 /boke/index.php/Home/Cate/index/id/5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000688s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000934s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001045s ]
+SQL: SHOW COLUMNS FROM `blog_cate` [ RunTime:0.064754s ]
+SQL: SELECT * FROM `blog_cate` ORDER BY sort desc  [ RunTime:0.000872s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.016604s ]
+SQL: SELECT * FROM `blog_link` ORDER BY sort desc  [ RunTime:0.001099s ]
+SQL: SHOW COLUMNS FROM `blog_admin` [ RunTime:0.021341s ]
+SQL: SELECT * FROM `blog_admin`  [ RunTime:0.001017s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.018572s ]
+SQL: SELECT * FROM `blog_article`  [ RunTime:0.000997s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE `cateid` = 5 LIMIT 1   [ RunTime:0.000716s ]
+NOTIC: [8] Undefined variable: page D:\phpStudy\WWW\boke\Application\Home\Controller\CateController.class.php 第 10 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\boke\Application\Home\Controller\CateController.class.php 第 10 行.
+SQL: SELECT * FROM `blog_article` WHERE `cateid` = 5  [ RunTime:0.000913s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000262s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000477s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041640s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041910s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001031s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001204s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002094s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002277s ]
+
+[ 2020-06-19T11:05:42+08:00 ] ::1 /boke/index.php/Home/Cate/index/id/style/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001136s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002066s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002285s ]
+SQL: SHOW COLUMNS FROM `blog_cate` [ RunTime:0.063410s ]
+SQL: SELECT * FROM `blog_cate` ORDER BY sort desc  [ RunTime:0.000885s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.016080s ]
+SQL: SELECT * FROM `blog_link` ORDER BY sort desc  [ RunTime:0.000989s ]
+SQL: SHOW COLUMNS FROM `blog_admin` [ RunTime:0.014893s ]
+SQL: SELECT * FROM `blog_admin`  [ RunTime:0.000834s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.016609s ]
+SQL: SELECT * FROM `blog_article`  [ RunTime:0.001146s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE `cateid` = 0 LIMIT 1   [ RunTime:0.000734s ]
+NOTIC: [8] Undefined variable: page D:\phpStudy\WWW\boke\Application\Home\Controller\CateController.class.php 第 10 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\boke\Application\Home\Controller\CateController.class.php 第 10 行.
+SQL: SELECT * FROM `blog_article` WHERE `cateid` = 0  [ RunTime:0.000764s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000288s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000572s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035936s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036201s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001164s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003219s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003428s ]
+
+[ 2020-06-19T11:06:12+08:00 ] ::1 /boke/index.php/Home/Cate/index/id/6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000800s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000899s ]
+SQL: SHOW COLUMNS FROM `blog_cate` [ RunTime:0.063920s ]
+SQL: SELECT * FROM `blog_cate` ORDER BY sort desc  [ RunTime:0.000879s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.015775s ]
+SQL: SELECT * FROM `blog_link` ORDER BY sort desc  [ RunTime:0.001068s ]
+SQL: SHOW COLUMNS FROM `blog_admin` [ RunTime:0.015202s ]
+SQL: SELECT * FROM `blog_admin`  [ RunTime:0.001057s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.015923s ]
+SQL: SELECT * FROM `blog_article`  [ RunTime:0.000931s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE `cateid` = 6 LIMIT 1   [ RunTime:0.000743s ]
+NOTIC: [8] Undefined variable: page D:\phpStudy\WWW\boke\Application\Home\Controller\CateController.class.php 第 10 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\boke\Application\Home\Controller\CateController.class.php 第 10 行.
+SQL: SELECT * FROM `blog_article` WHERE `cateid` = 6  [ RunTime:0.000817s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000308s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000514s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034306s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034579s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000916s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001128s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002219s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002364s ]
+
+[ 2020-06-19T11:06:14+08:00 ] ::1 /boke/index.php/Home/Cate/index/id/style/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000564s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000877s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000984s ]
+SQL: SHOW COLUMNS FROM `blog_cate` [ RunTime:0.065543s ]
+SQL: SELECT * FROM `blog_cate` ORDER BY sort desc  [ RunTime:0.000902s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.016482s ]
+SQL: SELECT * FROM `blog_link` ORDER BY sort desc  [ RunTime:0.000982s ]
+SQL: SHOW COLUMNS FROM `blog_admin` [ RunTime:0.017532s ]
+SQL: SELECT * FROM `blog_admin`  [ RunTime:0.001139s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.018017s ]
+SQL: SELECT * FROM `blog_article`  [ RunTime:0.000980s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE `cateid` = 0 LIMIT 1   [ RunTime:0.000736s ]
+NOTIC: [8] Undefined variable: page D:\phpStudy\WWW\boke\Application\Home\Controller\CateController.class.php 第 10 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\boke\Application\Home\Controller\CateController.class.php 第 10 行.
+SQL: SELECT * FROM `blog_article` WHERE `cateid` = 0  [ RunTime:0.000764s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000295s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000572s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036483s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036749s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000923s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001055s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001663s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001802s ]
+

@@ -142,9 +142,9 @@
                 </li><?php endforeach; endif; else: echo "" ;endif; ?>
             </ul>
         </div>
-        <div class="widget widget_links"><h3 class="widget-tit">友情链接</h3>
+        <div class="widget widget_links"><h3 class="widget-tit">关注列表</h3>
             <ul class='xoxo blogroll'>
-            <?php if(is_array($linkres)): $i = 0; $__LIST__ = $linkres;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li><a href="<?php echo ($vo["url"]); ?>" rel="friend" target="_blank"><?php echo ($vo["title"]); ?></a></li><?php endforeach; endif; else: echo "" ;endif; ?> 
+            <?php if(is_array($adminres)): $i = 0; $__LIST__ = $adminres;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li><a href="www.baidu.com" rel="friend" target="_blank"><?php echo ($vo["username"]); ?></a></li><?php endforeach; endif; else: echo "" ;endif; ?> 
 
             </ul>
         </div>
