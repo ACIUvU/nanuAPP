@@ -20,6 +20,7 @@ import android.os.Environment;
 import android.os.Handler;
 import android.os.Message;
 import android.provider.MediaStore;
+import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.Display;
 import android.view.Gravity;
@@ -57,6 +58,7 @@ public class PublishActivity extends BaseActivity {
     private GridView gw;
     private List<Map<String, Object>> datas;
     private GridViewAddImgesAdpter gridViewAddImgesAdpter;
+    TextView send;
     private Dialog dialog;
     private final int PHOTO_REQUEST_CAREMA = 1;// 拍照
     private final int PHOTO_REQUEST_GALLERY = 2;// 从相册中选择private static final String PHOTO_FILE_NAME = "temp_photo.jpg";
@@ -79,25 +81,37 @@ public class PublishActivity extends BaseActivity {
                 showdialog();
             }
         });
+
+        send= (TextView) findViewById(R.id.activity_selectimg_send);
+        send.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(PublishActivity.this, "发表成功", Toast.LENGTH_LONG).show();
+            }
+        });
     }
 
     /**
      * 选择图片对话框
      */
     public void showdialog() {
-        View localView = LayoutInflater.from(this).inflate(
-                R.layout.item_popupwindows, null);
+        View localView = LayoutInflater.from(this).inflate(R.layout.item_popupwindows, null);
         TextView tv_camera = (TextView) localView.findViewById(R.id.item_popupwindows_camera);
         TextView tv_gallery = (TextView) localView.findViewById(R.id.item_popupwindows_Photo);
         TextView tv_cancel = (TextView) localView.findViewById(R.id.item_popupwindows_cancel);
         dialog = new Dialog(this, R.style.custom_dialog);
         dialog.setContentView(localView);
         dialog.getWindow().setGravity(Gravity.BOTTOM);
-        // 设置全屏
-        WindowManager windowManager = getWindowManager();
-        Display display = windowManager.getDefaultDisplay();
+        // 设置全屏(已过时)
+//        WindowManager windowManager = getWindowManager();
+//        Display display = windowManager.getDefaultDisplay();
+//        WindowManager.LayoutParams lp = dialog.getWindow().getAttributes();
+//        lp.width = display.getWidth(); // 设置宽度
+        DisplayMetrics displayMetrics = new DisplayMetrics();
+        getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
         WindowManager.LayoutParams lp = dialog.getWindow().getAttributes();
-        lp.width = display.getWidth(); // 设置宽度
+        lp.width = displayMetrics.widthPixels;
+
         dialog.getWindow().setAttributes(lp);
         dialog.show();
         tv_cancel.setOnClickListener(new View.OnClickListener() {
