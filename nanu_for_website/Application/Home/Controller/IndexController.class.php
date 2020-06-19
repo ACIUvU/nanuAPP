@@ -7,7 +7,7 @@ class IndexController extends CommonController {
     	$count=$article->count();
     	$Page=new \Think\Page($count,3);
     	$show=$Page->show();
-    	$list=$article->limit($Page->firstRow.','.$page->listRows)->select();
+    	$list=$article->limit($Page->firstRow.','.$Page->listRows)->select();
     	$this->assign('list',$list);
     	$this->assign('page',$show);
         $this->display();

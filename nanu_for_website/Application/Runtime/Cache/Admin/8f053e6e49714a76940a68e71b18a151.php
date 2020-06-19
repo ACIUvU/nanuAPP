@@ -50,7 +50,7 @@
     <div class="main-wrap">
 
         <div class="crumb-wrap">
-            <div class="crumb-list"><i class="icon-font"></i><a href="/jscss/admin/design/">首页</a><span class="crumb-step">&gt;</span><a class="crumb-name" href="/jscss/admin/design/">类别管理</a><span class="crumb-step">&gt;</span><span>新增类别</span></div>
+            <div class="crumb-list"><i class="icon-font"></i><a href="/boke/index.php/Admin/Index/index">首页</a><span class="crumb-step">&gt;</span><a class="crumb-name" href="/jscss/admin/design/">用户管理</a><span class="crumb-step">&gt;</span><span>新增用户</span></div>
         </div>
         <div class="result-wrap">
             <div class="result-content">
@@ -58,12 +58,23 @@
                     <table class="insert-tab" width="100%">
                         <tbody>
                             <tr>
-                                <th><i class="require-red">*</i>类别名：</th>
+                                <th><i class="require-red">*</i>名称：</th>
                                 <td>
-                                    <input class="common-text required" id="catename" name="catename" size="50" value="" type="text">
+                                    <input class="common-text required" id="username" name="username" size="50" value="" type="text">
                                 </td>
                             </tr>
- 
+                            <tr>
+                                <th><i class="require-red">*</i>密码：</th>
+                                <td>
+                                    <input class="common-text required" id="password" name="password" size="50" value="" type="password">
+                                </td>
+                            </tr>
+                             <tr>
+                                <th><i class="require-red">*</i>确认密码：</th>
+                                <td>
+                                    <input class="common-text required" id="password2" name="password" size="50" value="" type="password">
+                                </td>
+                            </tr>
                             <tr>
                                 <th></th>
                                 <td>
