@@ -6,12 +6,18 @@ class CommonController extends Controller {
         parent::__construct();
         $this->nav();
         $this->link();
+        $this->admin();
         $this->news();
     }
     public function nav(){
     	$cate=D('cate');
     	$cateres=$cate->order('sort desc')->select();
     	$this->assign('cateres',$cateres);
+    }
+    public function admin(){
+    	$admin=D('admin');
+    	$adminres=$admin->select();
+    	$this->assign('adminres',$adminres);
     }
     public function link(){
     	$link=D('link');

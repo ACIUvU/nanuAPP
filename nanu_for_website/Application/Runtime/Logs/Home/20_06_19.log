@@ -1,0 +1,157 @@
+[ 2020-06-19T08:11:29+08:00 ] ::1 /boke/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002092s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002250s ]
+SQL: SHOW COLUMNS FROM `blog_cate` [ RunTime:0.015262s ]
+SQL: SELECT * FROM `blog_cate` ORDER BY sort desc  [ RunTime:0.000817s ]
+SQL: SHOW COLUMNS FROM `blog_admin` [ RunTime:0.012790s ]
+SQL: SELECT * FROM `blog_admin` ORDER BY sort desc  [ RunTime:0.000455s ]
+ERR: 1054:Unknown column 'sort' in 'order clause'
+ [ SQL语句 ] : SELECT * FROM `blog_admin` ORDER BY sort desc 
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.012175s ]
+SQL: SELECT * FROM `blog_article`  [ RunTime:0.001435s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` LIMIT 1   [ RunTime:0.000487s ]
+SQL: SELECT * FROM `blog_article` LIMIT 0,3   [ RunTime:0.000796s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000224s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000479s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039506s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039716s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002894s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003055s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003282s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003453s ]
+
+[ 2020-06-19T08:14:53+08:00 ] ::1 /boke/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001704s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002513s ]
+SQL: SHOW COLUMNS FROM `blog_cate` [ RunTime:0.062658s ]
+SQL: SELECT * FROM `blog_cate` ORDER BY sort desc  [ RunTime:0.000793s ]
+SQL: SHOW COLUMNS FROM `blog_admin` [ RunTime:0.013124s ]
+SQL: SELECT * FROM `blog_admin` ORDER BY sort desc  [ RunTime:0.000509s ]
+ERR: 1054:Unknown column 'sort' in 'order clause'
+ [ SQL语句 ] : SELECT * FROM `blog_admin` ORDER BY sort desc 
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.013316s ]
+SQL: SELECT * FROM `blog_article`  [ RunTime:0.000828s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` LIMIT 1   [ RunTime:0.000476s ]
+SQL: SELECT * FROM `blog_article` LIMIT 0,3   [ RunTime:0.000633s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000224s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000379s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032127s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032353s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001736s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001892s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002395s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002557s ]
+
+[ 2020-06-19T08:27:42+08:00 ] ::1 /boke/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001028s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001174s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001294s ]
+SQL: SHOW COLUMNS FROM `blog_cate` [ RunTime:0.061774s ]
+SQL: SELECT * FROM `blog_cate` ORDER BY sort desc  [ RunTime:0.000802s ]
+SQL: SHOW COLUMNS FROM `blog_admin` [ RunTime:0.012956s ]
+SQL: SELECT * FROM `blog_admin` ORDER BY sort desc  [ RunTime:0.000453s ]
+ERR: 1054:Unknown column 'sort' in 'order clause'
+ [ SQL语句 ] : SELECT * FROM `blog_admin` ORDER BY sort desc 
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.013079s ]
+SQL: SELECT * FROM `blog_article`  [ RunTime:0.000738s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` LIMIT 1   [ RunTime:0.000418s ]
+SQL: SELECT * FROM `blog_article` LIMIT 0,3   [ RunTime:0.000628s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000204s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000344s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028403s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028617s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001554s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001704s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002376s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002551s ]
+
+[ 2020-06-19T08:29:51+08:00 ] ::1 /boke/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001603s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002765s ]
+SQL: SHOW COLUMNS FROM `blog_cate` [ RunTime:0.062302s ]
+SQL: SELECT * FROM `blog_cate` ORDER BY sort desc  [ RunTime:0.000787s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.015176s ]
+SQL: SELECT * FROM `blog_link` ORDER BY sort desc  [ RunTime:0.000970s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.013977s ]
+SQL: SELECT * FROM `blog_article`  [ RunTime:0.000772s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` LIMIT 1   [ RunTime:0.000447s ]
+SQL: SELECT * FROM `blog_article` LIMIT 0,3   [ RunTime:0.000642s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000228s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000435s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033066s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033293s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001961s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002113s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002698s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002863s ]
+
+[ 2020-06-19T08:30:19+08:00 ] ::1 /boke/www.baidu.com
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001823s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002835s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003042s ]
+ERR: 无法加载控制器:Www.baidu.com
+
+[ 2020-06-19T08:34:14+08:00 ] ::1 /boke/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000958s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001380s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001480s ]
+SQL: SHOW COLUMNS FROM `blog_cate` [ RunTime:0.065069s ]
+SQL: SELECT * FROM `blog_cate` ORDER BY sort desc  [ RunTime:0.000801s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.013692s ]
+SQL: SELECT * FROM `blog_link` ORDER BY sort desc  [ RunTime:0.000771s ]
+SQL: SHOW COLUMNS FROM `blog_admin` [ RunTime:0.012834s ]
+SQL: SELECT * FROM `blog_admin`  [ RunTime:0.000651s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.012505s ]
+SQL: SELECT * FROM `blog_article`  [ RunTime:0.000687s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` LIMIT 1   [ RunTime:0.000398s ]
+SQL: SELECT * FROM `blog_article` LIMIT 0,3   [ RunTime:0.000584s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000210s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000353s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026972s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027170s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001439s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001586s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001978s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002125s ]
+

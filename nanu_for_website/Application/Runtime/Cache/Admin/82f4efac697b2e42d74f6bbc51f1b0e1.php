@@ -19,7 +19,7 @@
         <div class="top-info-wrap">
             <ul class="top-info-list clearfix">
                 <li><a href="#">用户:<?php echo $_SESSION['username']; ?></a></li>
-                <li><a href="/boke/index.php/Admin/Admin/add">注册</a></li>
+                <li><a href="/boke/index.php/Admin/Login/add">注册</a></li>
                 <li><a href="/boke/index.php/Admin/Admin/edit/id/"><?php echo $_SESSION['id']; ?>修改密码</a></li>
                 <li><a href="/boke/index.php/Admin/Admin/logout">退出</a></li>
             </ul>

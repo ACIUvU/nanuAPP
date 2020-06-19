@@ -23,7 +23,24 @@ class LoginController extends Controller {
     	$this->display('login');
     }
     }
-
+ public function add(){
+    	$admin=D('admin');
+    	if(IS_POST){
+    		$date['username']=I('username');
+    		$date['password']=md5(I('password'));
+    		if($admin->create($date)){
+    		if($admin->add()){
+    			$this->success('添加用户成功',U('Index/index'));
+    		}else{
+    			$this->error('添加用户失败');
+    		}	
+    		}else{
+    			$this->error($admin->getError());
+    		}
+    		return;
+    	}
+        $this->display();
+    }
     public function verify(){
     	$Verify=new \Think\Verify();
     	$Verify->fontSize=60;

@@ -89,7 +89,7 @@ public function lst(){
     	}
     	$articler=$article->find(I('id'));
     	$this->assign('articler',$articler);
-    	$cateres=D('Date')->select();
+    	$cateres=D('cate')->select();
     	$this->assign('cateres',$cateres);
         $this->display();
     }

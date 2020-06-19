@@ -18,7 +18,7 @@
     <div class="main-wrap">
 
         <div class="crumb-wrap">
-            <div class="crumb-list"><i class="icon-font"></i><a href="/jscss/admin/design/">首页</a><span class="crumb-step">&gt;</span><a class="crumb-name" href="/jscss/admin/design/">链接管理</a><span class="crumb-step">&gt;</span><span>新增链接</span></div>
+            <div class="crumb-list"><i class="icon-font"></i><a href="__MODULE__/Index/index">首页</a><span class="crumb-step">&gt;</span><a class="crumb-name" href="/jscss/admin/design/">文章管理</a><span class="crumb-step">&gt;</span><span>修改文章</span></div>
         </div>
         <div class="result-wrap">
             <div class="result-content">
@@ -42,7 +42,11 @@
                                 <th><i class="require-red">*</i>缩略图：</th>
                                 <td>
                                     <input  id="pic" name="pic" size="50" value="" type="file">
+                                    <if condition="$articler['pic']" height="50px" width="50px">
+                                   
                                     <img src="__ROOT__{$articler.pic}">
+                                  
+                                   </if>
                                 </td>
                             </tr>
                             <tr>
@@ -51,7 +55,7 @@
                                 <select name="cateid">
                                     <option>选择分类</option>
                                     <volist name="cateres" id="vo">
-                                    <option  value="{$vo.id}">{$vo.catename}</option>
+                                    <option  <if condition="$vo['id'] eq $articler['cateid']">selected="selected"</if>value="{$vo.id}">{$vo.catename}</option>
                                     </volist>
                                 </select>
                                 </td>
