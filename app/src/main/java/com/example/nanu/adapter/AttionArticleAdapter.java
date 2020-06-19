@@ -10,6 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.nanu.AttentionArticleActivity;
 import com.example.nanu.AttentionContentActivity;
 import com.example.nanu.R;
 import com.example.nanu.model.AttionArticle;
@@ -59,9 +60,15 @@ public class AttionArticleAdapter extends BaseAdapter {
         view.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent intent = new Intent(mContext, AttentionContentActivity.class);
+                Intent intent = new Intent(mContext, AttentionArticleActivity.class);
                 mContext.startActivity(intent);
-
+            }
+        });
+        view.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent(mContext, AttentionArticleActivity.class);
+                mContext.startActivity(intent);
             }
         });
         viewHolder.image_article.setOnClickListener(new View.OnClickListener(){

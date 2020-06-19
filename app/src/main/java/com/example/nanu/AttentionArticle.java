@@ -72,9 +72,12 @@ public class AttentionArticle extends Fragment {
         ListView list_attention = (ListView)getView().findViewById(R.id.list_article);
         AttionArticleAdapter ma = new AttionArticleAdapter(datas, getActivity());
         list_attention.setAdapter(ma);
-        AttionArticle data = new AttionArticle("GitHubDaily", "每日分享GitHub优质项目","123", R.drawable.github);
+        AttionArticle data = new AttionArticle("8K 从容阅不凡", "Z8H系列--8K“芯”视图 从容阅不凡","8K攻防", R.drawable.dianzi1);
         datas.add(data);
-
+        data=new AttionArticle("无线降噪运动耳机", "让你在运动中不再枯燥乏累","爱耳者", R.drawable.dianzi2);
+        datas.add(data);
+        data=new AttionArticle("VR眼镜", "梦想千万里，VR零距离","VR体验者", R.drawable.dianzi6);
+        datas.add(data);
         list_attention.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
