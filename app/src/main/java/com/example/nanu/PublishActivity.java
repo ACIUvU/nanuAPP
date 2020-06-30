@@ -63,7 +63,8 @@ public class PublishActivity extends BaseActivity {
     private final int PHOTO_REQUEST_CAREMA = 1;// 拍照
     private final int PHOTO_REQUEST_GALLERY = 2;// 从相册中选择private static final String PHOTO_FILE_NAME = "temp_photo.jpg";
     private File tempFile;
-    private final String IMAGE_DIR = Environment.getExternalStorageDirectory() + "/gridview/";
+    private final String IMAGE_DIR =
+            PublishActivity.this.getExternalFilesDir(null)+ "/gridview/";
     /* 头像名称 */
     private final String PHOTO_FILE_NAME = "temp_photo.jpg";
 
