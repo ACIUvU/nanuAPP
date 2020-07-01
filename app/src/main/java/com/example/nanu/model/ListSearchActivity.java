@@ -71,9 +71,7 @@ public class ListSearchActivity extends AppCompatActivity {
                     }else {
                         Toast.makeText(ListSearchActivity.this, "该内容已在历史记录中", Toast.LENGTH_SHORT).show();
                     }
-
                     mAdapter.updata(db.queryData(""));
-
                 }else {
                     Toast.makeText(ListSearchActivity.this, "请输入内容", Toast.LENGTH_SHORT).show();
                 }
