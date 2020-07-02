@@ -61,7 +61,7 @@ public class PublishActivity extends BaseActivity {
     TextView send;
     private Dialog dialog;
     private final int PHOTO_REQUEST_CAREMA = 1;// 拍照
-    private final int PHOTO_REQUEST_GALLERY = 2;// 从相册中选择private static final String PHOTO_FILE_NAME = "temp_photo.jpg";
+    private final int PHOTO_REQUEST_GALLERY = 2;// 从相册中选择
     private File tempFile;
     private final String IMAGE_DIR = Environment.getExternalStorageDirectory() + "/gridview/";
     /* 头像名称 */
