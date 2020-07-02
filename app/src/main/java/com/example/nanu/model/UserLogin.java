@@ -15,21 +15,7 @@ public class UserLogin implements Serializable {
 
     public UserLogin(){ }
 
-    /*
-    public UserLogin(int id,String number,String password ){
-        super();
-        this.number = number;
-        this.password = password;
-    }
 
-    // 创建表
-    public static final String CREATE_TABLE = "CREATE TABLE" + TABLE_NAME + "("
-            + COLUMN_ID + "INTEGER PRIMARY KEY AUTOINCREMENT, "
-            + COLUMN_NUMBER + "TEXT, "
-            + COLUMN_PASSWORD + "TEXT, "
-            + ")";
-
-     */
 
     // 获取登录信息
     public long getId(){ return id; }

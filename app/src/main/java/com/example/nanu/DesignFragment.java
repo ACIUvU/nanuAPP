@@ -85,17 +85,10 @@ public class DesignFragment extends Fragment{
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_design, container, false);
 
-//        TextView textView = (TextView)view.findViewById(R.id.design_tab_menu_search);
-
-        // 初始化设计专题内容
+        // 初始化专题内容
         initUserDesign();
-
-//        this.getActivity().setContentView(R.layout.activity_design);
-//        this.getActivity().getWindow().setStatusBarColor(0xffffcc66);
-//        listView = (ListView) this.getActivity().findViewById(R.id.list);
 
         listView = (ListView)view.findViewById(R.id.list);
         adapter = new CustomListAdapter(getActivity(), userDesignsList);
@@ -104,7 +97,6 @@ public class DesignFragment extends Fragment{
         pDialog = new ProgressDialog(getActivity());
         pDialog.setMessage("正在努力加载中...");
         pDialog.show();
-//        ((AppCompatActivity)getActivity()).getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#FFCC66")));
 
         // 创建Volley响应对象
         JsonArrayRequest movieReq = new JsonArrayRequest(url, new Response.Listener<JSONArray>() {
@@ -177,15 +169,7 @@ public class DesignFragment extends Fragment{
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-//                Toast.makeText(getActivity(),"第"+position+"个item",Toast.LENGTH_SHORT).show();
-                // 显示设计专题内容
-//                List<UserDesign> test_list = new ArrayList<UserDesign>();
-//                test_list = SQLiteDB.getInstance((getActivity().getApplicationContext())).loadUserDesign(position+1);
-//                for( UserDesign ud : test_list){
-//                    System.out.println(ud.toString());
-//                }
-
-                // 跳转显示详细设计内容页面
+                // 跳转显示详细内容页面
                 Intent intent = new Intent(getActivity(), DesignContentActivity.class);
                 intent.putExtra("design_id",String.valueOf(position));
                 startActivity(intent);
@@ -245,6 +229,7 @@ public class DesignFragment extends Fragment{
 
     // 初始化设计专题内容
     public void initUserDesign(){
+
         UserDesign userDesign1 = new UserDesign();
         userDesign1.setName("电子发烧友？快来看看吧~");
         userDesign1.setType(0);
@@ -311,6 +296,8 @@ public class DesignFragment extends Fragment{
         userDesign1.setCommendation(98);
         if(SQLiteDB.getInstance(getActivity().getApplicationContext()).saveUserDesign(userDesign1)) System.out.println("插入设计专题成功!");
         else System.out.println("插入设计专题失败!");
+
+
     }
 
 }
